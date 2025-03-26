@@ -1,0 +1,226 @@
+#pair {
+   margin: 0;
+   padding: 0;
+   background-color: white;
+   padding-top: calc(67px + 25px);
+   margin-top: -25px;
+   padding-bottom: 70px;
+   border-radius: 32px;
+}
+
+/* Header */
+.pair-header {
+   max-width: 780px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   padding: 0 24px;
+}
+
+.pair-eyebrow {
+   color: var(--Grey-Grey-500, #646464);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 112%; /* 13.44px */
+   letter-spacing: 0.12px;
+   text-transform: uppercase;
+}
+
+.pair-title {
+   color: var(--Text-Primary, #000);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 40.32px */
+   letter-spacing: -0.36px;
+}
+
+.pair-description {
+   color: var(--Text-Primary, #000);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+}
+
+/* card */
+
+.pair-card {
+   position: relative;
+}
+
+.pair-card-content {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 20px 22px;
+}
+
+.pair-card-image {
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+.pair-card-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 32px;
+   overflow: hidden;
+}
+
+.pair-card-title {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%; /* 21.6px */
+}
+
+.pair-card-description {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 19.32px */
+}
+
+.pair-card-content .cta-pair {
+   margin-top: 8px;
+}
+
+.pair-main-container {
+   padding: 0 24px;
+}
+
+/* carousel  */
+.pair-carousel .slick-track {
+   display: flex !important;
+}
+
+.pair-carousel-card {
+   width: 100%;
+   height: 100%;
+}
+
+.pair-carousel-card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 32px;
+   overflow: hidden;
+}
+
+.pair-carousel .slick-dots {
+   margin-top: 30px !important;
+}
+
+.pair-carousel {
+   margin-bottom: 48px !important;
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   .pair-main-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding: 0 60px;
+      justify-content: center;
+   }
+
+   .pair-carousel {
+      width: 59%;
+      margin-bottom: 57px !important;
+   }
+
+   .pair-header {
+      margin-bottom: 55px;
+      padding: 0 60px;
+   }
+
+   .pair-card-image {
+      margin-bottom: 0;
+   }
+
+   .pair-card-content {
+      padding: 25px 19px;
+   }
+
+   .pair-card-content .cta-pair {
+      margin-top: 0;
+   }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+   #pair .slick-next:before {
+      background-image: url("/_assets/arrow.png");
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      background-position: center !important;
+      filter: none !important;
+   }
+
+   #pair .slick-prev:before {
+      background-image: url("/_assets/arrow.png");
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      background-position: center !important;
+      filter: none !important;
+      transform: rotate(180deg);
+   }
+
+   #pair .slick-dots li.slick-active button:before,
+   #pair .slick-dots li button::before {
+      background-color: #ea1917 !important;
+      border: 1px solid #ea1917 !important;
+   }
+
+   #pair .slick-dots li button:before,
+   #pair .slick-dots li button::before {
+      background-color: #1b1a1e42 !important;
+      border: 1px solid #1b1a1e42 !important;
+   }
+
+   .pair-main-container {
+      gap: 43px;
+   }
+
+   .pair-header {
+      max-width: 982px;
+   }
+
+   .pair-eyebrow {
+      text-align: center;
+   }
+
+   .pair-title {
+      color: var(--Text-Primary, #000);
+      text-align: center;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 53.76px */
+      letter-spacing: -0.48px;
+   }
+
+   .pair-description {
+      color: var(--Text-Primary, #000);
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 22.08px */
+   }
+
+   .pair-carousel {
+      max-width: 1015px;
+      width: 100%;
+   }
+}

@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- carousel -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+      />
+
+      <link rel="stylesheet" href="/LG/css/hsad-style.css" />
+      <link rel="stylesheet" href="/global.css" />
+      <link rel="stylesheet" href="style.css" />
+      <script src="index.js" defer></script>
+      <title>Table Component</title>
+   </head>
+   <body>
+      <div id="table">
+         <div class="table-component-wrapper">
+            <div class="table-header">
+               <p class="table-eyebrow">EXPLORE KEY FEATURES</p>
+               <h2 class="table-title">Find the washer that works for you</h2>
+               <p class="table-description">
+                  We’re making it even easier to discover which LG washer is
+                  right for your home. Compare and contrast our top models side
+                  by side, from top loads with easy access and deep clean
+                  options to front load washers designed for efficiency, power
+                  and a sleek, modern look.
+               </p>
+            </div>
+
+            <div class="comparison-wrapper">
+               <!-- tabs -->
+               <div class="tabs-container">
+                  <div class="tab-btn active" data-tab="tab1">
+                     <div>
+                        <span>Front Load</span>
+                     </div>
+                  </div>
+                  <div class="tab-btn" data-tab="tab2">
+                     <div>
+                        <span>Top Load</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- tables -->
+               <div class="comparison-tables">
+                  <!-- table 1 -->
+                  <div class="comparison-table active" data-table="tab1">
+                     <!-- fixed column -->
+                     <div class="fixed-column">
+                        <div>
+                           <p>LG Front Load Washers</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Available Colors</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Capacity</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Cycles</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Allergiene™ Cycle</p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              Helps remove common allergens, including pollen
+                              and pet dander, from your fabrics with a powerful
+                              steam cycle.
+                           </div>
+                        </div>
+                        <div>
+                           <p>Built-in Intelligence</p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              Our built-in AI technology automatically selects
+                              optimal wash and dry motions and settings based on
+                              fabric type.
+                           </div>
+                        </div>
+                        <div>
+                           <p>ezDispense™</p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              Fill the detergent and fabric softener reservoirs
+                              once and you're set for multiple cycles.
+                           </div>
+                        </div>
+                        <div>
+                           <p>TurboWash<sup>®</sup></p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              More jets mean a shorter cycle time, no matter the
+                              size of the load.
+                           </div>
+                        </div>
+                        <!-- CTA space -->
+                        <div></div>
+                     </div>
+
+                     <!-- products -->
+                     <div class="products-carousel" id="carousel1">
+                        <!-- product 1 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WM3400.png" alt="washer 1" />
+                              <span>WM3400</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info"></div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 2 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WM3470.png" alt="washer 2" />
+                              <span>WM3470</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info"></div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 3 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WM4000.png" alt="washer 3" />
+                              <span>WM4000</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-dark-silver"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>12 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img
+                                 src="./assets/turbowash360.png"
+                                 alt="turno wash 360"
+                              />
+
+                              <span class="info-icon"
+                                 ><img src="./assets/info-icon.png"
+                              /></span>
+                              <div class="tooltip">
+                                 Five jets with variable sprays deliver a
+                                 complete clean more quickly than ever before.
+                              </div>
+                           </div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 4 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WM5500.png" alt="washer 4" />
+                              <span>WM5500</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>25 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img
+                                 src="./assets/turbowash360.png"
+                                 alt="turno wash 360"
+                              />
+                           </div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 5 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WM6500.png" alt="washer 5" />
+                              <span>WM6500</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-dark-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>25 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img
+                                 src="./assets/turbowash360.png"
+                                 alt="turno wash 360"
+                              />
+                           </div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 6 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WM6700.png" alt="washer 6" />
+                              <span>WM6700</span>
+                           </div>
+                           <div>
+                              <div class="circle-dark-silver"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div class="cell-info">
+                              <img
+                                 src="./assets/turbowash360.png"
+                                 alt="turno wash 360"
+                              />
+                           </div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Tabela 2  -->
+                  <div class="comparison-table" data-table="tab2">
+                     <!-- fixed column -->
+                     <div class="fixed-column">
+                        <div>
+                           <p>LG Top Load Washers</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Available Colors</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Impeller Capacity</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Cycles</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Impeller</p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              A low-profile mechanism that creates currents of
+                              water to move clothes through the wash tub and
+                              cause them to rub against one another, removing
+                              stubborn spots and stains.
+                           </div>
+                        </div>
+                        <div>
+                           <p>Built-in Intelligence</p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              Our built-in AI technology automatically selects
+                              optimal wash and dry motions and settings based on
+                              fabric type.
+                           </div>
+                        </div>
+                        <div>
+                           <p>EasyUnload™</p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              An angled ergonomic front design puts the entire
+                              tub of your top load washer within easy reach.
+                           </div>
+                        </div>
+                        <div>
+                           <p>TurboWash<sup>®</sup></p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              More jets mean a shorter cycle time, no matter the
+                              size of the load.
+                           </div>
+                        </div>
+                        <div>
+                           <p>ezDispense™</p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              Fill the detergent and fabric softener reservoirs
+                              once and you're set for multiple cycles.
+                           </div>
+                        </div>
+
+                        <div>
+                           <p>Water Faucet</p>
+                        </div>
+
+                        <div class="cell-md">
+                           <p>Shop Impeller</p>
+                        </div>
+
+                        <div>
+                           <p>4-Way® Agitator Model</p>
+                           <span><img src="./assets/info-icon.png" /></span>
+                           <div class="tooltip">
+                              A central post and specially designed fins which
+                              create a unique 4-way wash action for a powerful
+                              yet gentle clean in even less time.
+                           </div>
+                        </div>
+
+                        <div>
+                           <p>Agitator Capacity</p>
+                        </div>
+
+                        <div>
+                           <p>Shop Agitator</p>
+                        </div>
+                     </div>
+
+                     <!-- products -->
+                     <div class="products-carousel" id="carousel2">
+                        <!-- product 1 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WT6100.png" alt="#" />
+                              <span>WT6100</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="./assets/turbodrum.png" alt="" />
+                              <span class="info-icon"
+                                 ><img src="./assets/info-icon.png"
+                              /></span>
+                              <div class="tooltip">
+                                 Simulating the agitator effect of traditional
+                                 top loads, the LG Direct Drive Motor rotates
+                                 independently from the tub mechanism to create
+                                 a powerful water flow.
+                              </div>
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT6105</div>
+                           <div>4.1 Cu.Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 2 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WT7000.png" alt="#" />
+                              <span>WT7000</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="./assets/turbodrum.png" alt="" />
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT7005</div>
+                           <div>4.3 Cu.Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 3 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WT7150.png" alt="#" />
+                              <span>WT7150</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="./assets/turbodrum.png" alt="" />
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT7155</div>
+                           <div>4.8 Cu. Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 4 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WT8200.png" alt="#" />
+                              <span>WT8200</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div class="cell-info">
+                              <img src="./assets/turbowash.png" alt="" />
+                              <span class="info-icon"
+                                 ><img src="./assets/info-icon.png"
+                              /></span>
+                              <div class="tooltip">
+                                 More jets mean a shorter cycle time, no matter
+                                 the size of the load.
+                              </div>
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT8205</div>
+                           <div>4.8 Cu. Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 5 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WT8400.png" alt="#" />
+                              <span>WT8400</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div class="cell-info">
+                              <img src="./assets/turbowash3d.png" alt="" />
+                              <span class="info-icon"
+                                 ><img src="./assets/info-icon.png"
+                              /></span>
+                              <div class="tooltip">
+                                 A powerful jet spray, plus a tub and motor that
+                                 rotate independently in opposite directions
+                                 lead to a thorough yet gentle clean in less
+                                 time.
+                              </div>
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT8405</div>
+                           <div>5.3 Cu. Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 6 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="./assets/WT8600.png" alt="#" />
+                              <span>WT8600</span>
+                           </div>
+                           <div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div class="cell-info">
+                              <img src="./assets/turbowash3d.png" alt="" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div>
+                              <img src="./assets/check.png" alt="check sign" />
+                           </div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Navegação do carousel -->
+               <div class="custom-navigation">
+                  <div id="custom-dots-tab1" class="custom-dots"></div>
+                  <div id="custom-arrows-tab1" class="custom-arrows"></div>
+
+                  <div id="custom-dots-tab2" class="custom-dots"></div>
+                  <div id="custom-arrows-tab2" class="custom-arrows"></div>
+               </div>
+            </div>
+         </div>
+         <div class="compare-tab">
+            <img src="./assets/compare-models.png" alt="compare icon" />
+         </div>
+      </div>
+
+      <!-- carousel -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script
+         type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ></script>
+   </body>
+</html>

@@ -1,0 +1,245 @@
+#cards {
+   margin: 0;
+   padding: 0;
+   font-family: "LG EI", sans-serif;
+   margin-bottom: 70px;
+   background-color: white;
+}
+
+.cards-header {
+   max-width: 1600px;
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 74px;
+   margin-bottom: 45px;
+}
+
+.cards-header-wrapper {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 0 24px;
+}
+
+.cards-item {
+   max-width: 268px;
+}
+
+.cards-title {
+   color: var(--Text-Primary, #000);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 40.32px */
+   letter-spacing: -0.36px;
+}
+
+.cards-copy {
+   color: #000;
+   font-family: "LG EI";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+   text-align: left;
+}
+
+.cards-image {
+   width: 100%;
+   aspect-ratio: 1 / 1;
+   border-radius: 32px;
+   overflow: hidden;
+   margin-bottom: 30px;
+}
+
+.cards-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.cards-item-title {
+   color: var(--Text-Primary, rgba(27, 26, 30, 0.87));
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%; /* 26.4px */
+   margin-bottom: 16px;
+}
+
+.cards-item-description {
+   color: var(--Text-Secondary, #333);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+}
+
+.cards-item-description a {
+   color: var(--Text-Secondary, #333);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%;
+   text-decoration-line: underline;
+   text-decoration-style: solid;
+   text-decoration-skip-ink: none;
+   text-decoration-thickness: auto;
+   text-underline-offset: auto;
+   text-underline-position: from-font;
+}
+
+.cta.cta-cards {
+   margin-top: 24px;
+}
+
+.cards-wrapper .slick-prev,
+.cards-wrapper .slick-next {
+   top: 100%;
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   #cards {
+      margin-bottom: 90px;
+   }
+
+   .cards-header {
+      margin-top: 60px;
+   }
+
+   .cards-title {
+      text-align: center;
+   }
+
+   .cards-copy {
+      text-align: center;
+   }
+
+   .cta.cta-cards {
+      max-width: 94px;
+      margin-top: 21px;
+   }
+
+   .cta.cta-cards a {
+      color: var(--Primary-Contrast, #fff) !important;
+      text-align: center !important;
+      font-size: 13.653px !important;
+      font-style: normal !important;
+      font-weight: 600 !important;
+      line-height: 120% !important; /* 16.384px */
+      padding: 9px 14px !important;
+   }
+
+   .cards-item-description {
+      text-align: left;
+      color: var(--Text-Secondary, #333);
+      font-size: 13.653px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 18.842px */
+   }
+
+   .cards-item-title {
+      text-align: left;
+      color: var(--Text-Primary, rgba(27, 26, 30, 0.87));
+      font-size: 20.48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 24.576px */
+      letter-spacing: -0.41px;
+      margin-bottom: 13.5px;
+   }
+
+   .cards-item-description a {
+      font-size: 13.653px;
+   }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+   #cards {
+      margin-bottom: 160px;
+   }
+
+   .cards-item {
+      max-width: unset;
+      height: 100%;
+   }
+   .cards-image {
+      max-width: 396px;
+      width: 100%;
+   }
+
+   .cards-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 1240px;
+      gap: 24px;
+      margin: 0 auto;
+      position: relative;
+   }
+
+   .cards-header {
+      margin-top: 100px;
+   }
+
+   .cards-header-wrapper {
+      max-width: 984px;
+   }
+
+   .cards-title {
+      color: #000;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 53.76px */
+      letter-spacing: -0.48px;
+      text-align: center;
+   }
+
+   .cards-copy {
+      color: #000;
+      font-family: "LG EI";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 22.08px */
+      text-align: center;
+   }
+
+   .cards-item-description {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 22.08px */
+   }
+
+   .cards-item-description a {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 22.08px */
+   }
+
+   .cards-item-title {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 28.8px */
+      letter-spacing: -0.48px;
+   }
+
+   .cta.cta-cards {
+      margin-top: 24px;
+      max-width: 110px;
+   }
+
+   .cta.cta-cards a {
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      line-height: 120% !important; /* 19.2px */
+      padding: 10.5px 16px !important;
+   }
+}

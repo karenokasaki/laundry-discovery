@@ -1,0 +1,16 @@
+{
+   "name": "lg-laundry-washing-discovery",
+   "version": "1.0.0",
+   "main": "script.js",
+   "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "node script.js"
+   },
+   "author": "",
+   "license": "ISC",
+   "description": "",
+   "dependencies": {
+      "cheerio": "^1.0.0",
+      "mkdirp": "^3.0.1"
+   }
+}

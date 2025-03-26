@@ -1,0 +1,152 @@
+#thinq {
+   margin: 0;
+   padding: 0;
+   background-color: #f0ece4;
+   padding-top: 107px;
+   margin-top: -30px;
+   padding-bottom: 58px;
+}
+
+.thinq-bg {
+   color: white;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 24px;
+}
+
+.thinq-bg .thinq-image {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   border-radius: 32px;
+   overflow: hidden;
+}
+
+.thinq-content-wrapper {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.thinq-content {
+   position: relative;
+   padding: 0 24px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.thinq-title {
+   color: var(--Warm-Gray-Light-Gray-00, #f9f7f1);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 40.32px */
+   letter-spacing: -0.36px;
+   margin-bottom: 16px;
+   margin-top: 34px;
+}
+
+.thinq-description {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 24.84px */
+}
+
+.thinq-logo {
+   max-width: 105px;
+   margin-top: auto;
+   padding-left: 11px;
+}
+
+.thinq-cta {
+   margin-top: 19px;
+   margin-bottom: 24px;
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   #thinq {
+      padding-top: 85px;
+      padding-bottom: 85px;
+   }
+
+   .thinq-content {
+      max-width: 415px;
+   }
+
+   .thinq-description {
+      color: var(--Primary-Contrast, #fff);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 24.84px */
+   }
+
+   .thinq-logo {
+      position: absolute;
+      bottom: 55px;
+      left: 25px;
+   }
+
+   .thinq-cta {
+      width: 120px !important;
+      margin-bottom: 0 !important;
+      margin-top: 16px !important;
+   }
+
+   .thinq-logo {
+      max-width: 125px;
+      width: 100%;
+   }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+   #thinq {
+      width: 100%;
+      padding: 100px 0;
+   }
+
+   .thinq-wrapper {
+      max-width: 1600px;
+      margin: 0 auto;
+      position: relative;
+   }
+
+   .thinq-bg {
+      margin: 0 auto;
+      max-width: 1488px;
+   }
+
+   .thinq-content {
+      position: unset;
+      justify-content: center;
+      padding-left: 68px;
+   }
+
+   .thinq-title {
+      color: var(--Warm-Gray-Light-Gray-00, #f9f7f1);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 40.32px */
+      letter-spacing: -0.36px;
+      margin-top: unset;
+   }
+
+   .thinq-logo {
+      max-width: 200px;
+      width: 100%;
+      right: 40px;
+      top: 40px;
+      bottom: unset;
+      left: unset;
+   }
+}

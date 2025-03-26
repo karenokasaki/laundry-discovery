@@ -1,0 +1,277 @@
+#confidence {
+   margin: 0;
+   padding: 0;
+   background-color: #f0ece4;
+   padding-top: 110px;
+   margin-top: -30px;
+   padding-bottom: 55px;
+}
+
+/* Header */
+.confidence-header {
+   max-width: 780px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin: 0 auto;
+   margin-bottom: 28px;
+   padding: 0 24px;
+}
+
+.confidence-eyebrow {
+   color: var(--Grey-Grey-500, #646464);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 112%; /* 13.44px */
+   letter-spacing: 0.12px;
+   text-transform: uppercase;
+}
+
+.confidence-title {
+   color: var(--Text-Primary, #000);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 40.32px */
+   letter-spacing: -0.36px;
+}
+
+.confidence-description {
+   color: var(--Text-Primary, #000);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+}
+
+.confidence-carousel {
+   margin-left: 14px;
+}
+
+.confidence-carousel .slick-slide {
+   max-width: 350px !important;
+}
+
+.confidence-carousel .slick-track {
+   display: flex !important;
+}
+
+.confidence-carousel .slick-track > :last-child {
+   margin-right: 24px !important;
+}
+
+/* Card item */
+.confidence-card-eyebrow {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 112%; /* 13.44px */
+   letter-spacing: 0.12px;
+   text-transform: uppercase;
+}
+
+.confidence-card-title {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%; /* 21.6px */
+}
+
+.confidence-card-description {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 19.32px */
+}
+
+.confidence-card-description span a {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%;
+   text-decoration-line: underline;
+   text-decoration-style: solid;
+   text-decoration-skip-ink: none;
+   text-decoration-thickness: auto;
+   text-underline-offset: auto;
+}
+
+.confidence-card {
+   position: relative;
+   aspect-ratio: 269 / 384;
+   min-width: 269px;
+   width: 100%;
+   border-radius: 24px;
+   overflow: hidden;
+}
+
+.confidence-card-image {
+   position: relative;
+   height: 100%;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+
+.confidence-card-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 8px;
+   border-radius: 24px;
+   overflow: hidden;
+}
+
+.confidence-card-content {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   justify-content: flex-end;
+   padding: 24px;
+}
+
+.confidence-card-content .cta {
+   margin-top: 8px;
+}
+
+.confidence-disclaimer {
+   padding: 0 24px;
+}
+.confidence-disclaimer p {
+   color: var(--Text-Primary, rgba(27, 26, 30, 0.87));
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 122%; /* 14.64px */
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   #confidence {
+      padding-bottom: 67px;
+   }
+
+   .confidence-carousel {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 15px;
+      margin-left: 59px;
+      margin-right: 59px;
+      justify-content: center;
+   }
+
+   .confidence-header {
+      padding: 0 59px;
+      margin-bottom: 44px;
+   }
+
+   .confidence-disclaimer {
+      padding: 0 59px;
+   }
+
+   .confidence-card {
+      max-width: 350px;
+   }
+
+   .confidence-card-eyebrow {
+      font-size: 13.06px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 112%; /* 14.627px */
+      letter-spacing: 0.131px;
+      text-transform: uppercase;
+   }
+
+   .confidence-card-title {
+      font-size: 19.589px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 23.507px */
+   }
+
+   .confidence-card-description {
+      font-size: 15.236px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 21.026px */
+   }
+
+   .confidence-card-description span a {
+      font-size: 15.236px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 21.026px */
+   }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+   #confidence {
+      padding-bottom: 123px;
+   }
+
+   .confidence-header {
+      padding: 0 59px;
+      margin-bottom: 50px;
+      max-width: 1100px;
+   }
+
+   .confidence-eyebrow,
+   .confidence-description {
+      text-align: center;
+   }
+
+   .confidence-title {
+      text-align: center;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 53.76px */
+      letter-spacing: -0.48px;
+   }
+
+   .confidence-carousel {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 20px;
+      margin-left: 59px;
+      margin-right: 59px;
+   }
+
+   .confidence-disclaimer {
+      padding: 0 59px;
+   }
+
+   .confidence-card {
+      border-radius: 32px;
+      aspect-ratio: 1/1;
+      max-width: 606px;
+   }
+
+   .confidence-card-image img {
+      border-radius: 32px;
+   }
+
+   .confidence-disclaimer {
+      max-width: 1354px;
+      margin: 0 auto;
+      padding: 0 59px;
+   }
+
+   .confidence-card .cta {
+      max-width: 210px !important;
+   }
+
+   .confidence-card .cta a {
+      padding: 10.5px 16px !important;
+   }
+}

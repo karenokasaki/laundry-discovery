@@ -1,0 +1,15 @@
+{
+   "title": "Lg Laundry Washing Discovery",
+   "description": "Lg Laundry Washing Discovery landing page",
+   "components": [
+      "Hero",
+      "Banner",
+      "Cards",
+      "Table",
+      "Confidence",
+      "Pair",
+      "Thinq",
+      "Review",
+      "Footer"
+   ]
+}

@@ -1,0 +1,185 @@
+@font-face {
+   font-family: "LG EI";
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+   src: local("☺"), url("/LG/fonts/LG EI_Text Regular.woff2") format("woff2"),
+      url("/LG/fonts/LG EI_Text Regular.woff") format("woff"),
+      url("/LG/fonts/LG EI_Text Regular.eot") format("eot");
+}
+@font-face {
+   font-family: "LG EI";
+   font-display: swap;
+   font-weight: 550;
+   font-style: normal;
+   src: local("☺"),
+      url("/LG/fonts/LG EI_Headline Semibold.woff2") format("woff2"),
+      url("/LG/fonts/LG EI_Headline Semibold.woff") format("woff"),
+      url("/LG/fonts/LG EI_Headline Semibold.eot") format("eot");
+}
+@font-face {
+   font-family: "LG EI";
+   font-display: swap;
+   font-weight: 600;
+   font-style: normal;
+   src: local("☺"), url("/LG/fonts/LG EI_Text SemiBold.woff2") format("woff2"),
+      url("/LG/fonts/LG EI_Text SemiBold.woff") format("woff"),
+      url("/LG/fonts/LG EI_Text SemiBold.eot") format("eot");
+}
+@font-face {
+   font-family: "LG EI";
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+   src: local("☺"), url("/LG/fonts/LG EI_Text Bold.woff2") format("woff2"),
+      url("/LG/fonts/LG EI_Text Bold.woff") format("woff"),
+      url("/LG/fonts/LG EI_Text Bold.eot") format("eot");
+}
+
+body {
+   background-color: white;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+img,
+video {
+   margin: 0;
+   padding: 0;
+   font-family: "LG EI", sans-serif;
+}
+
+body > div {
+   margin: 0 auto;
+}
+
+/* carousel global */
+
+/* carousel black */
+/* size of dots & color of dots */
+.slick-dots li.slick-active button:before,
+.slick-dots li button::before {
+   width: 8px;
+   height: 8px;
+   background-color: #cbc8c2;
+   border: 1px solid #cbc8c2;
+}
+
+/* color of dot selected */
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before,
+.slick-dots li.slick-active button::before {
+   background-color: black !important;
+   border: 1px solid black !important;
+}
+
+/* spacing between the dots */
+.slick-dots li {
+   width: unset;
+   height: unset;
+   margin-right: 4px;
+}
+
+/* color of arrows */
+.slick-prev:before,
+.slick-next:before {
+   filter: grayscale(100%);
+}
+
+.slick-arrow:focus,
+.slick-arrow:active {
+   outline: none !important;
+   -webkit-tap-highlight-color: transparent;
+   box-shadow: none !important;
+}
+
+/* Para dispositivos com touch */
+.slick-arrow {
+   -webkit-tap-highlight-color: transparent;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+.slick-disabled {
+   filter: grayscale(100%);
+}
+
+/* cta button red-variant */
+.cta {
+   height: 40px !important;
+   width: 100% !important;
+}
+
+.cta a {
+   background-color: white !important;
+   color: var(--Primary-Contrast, #fff) !important;
+   text-align: center !important;
+   font-family: "LG EI" !important;
+   font-size: 16px !important;
+   font-style: normal !important;
+   font-weight: 600 !important;
+   line-height: 120% !important; /* 19.2px */
+   text-decoration: none !important;
+   text-transform: capitalize !important;
+   background-color: #ea1917 !important;
+   transition: none !important;
+   padding: 10.5px 0 !important;
+   width: 100% !important;
+}
+
+.cta a:after {
+   transition: none !important;
+   background-color: #ea1917 !important;
+   color: black;
+}
+
+.cta a:hover {
+   background-color: white !important;
+   color: black !important;
+   outline: 1px solid black !important;
+   transition: none !important;
+}
+
+/* cta button white-variant */
+.cta.white-variant.cta.white-variant a {
+   color: black !important;
+   background-color: unset !important;
+   border: 1px solid var(--Grey-Grey-500, #646464) !important;
+}
+
+.cta.white-variant.cta.white-variant a:after {
+   background-color: white !important;
+   color: black !important;
+}
+
+.cta.white-variant.cta.white-variant a:hover {
+   background-color: var(--Grey-Grey-500, #ea1917) !important;
+   color: white !important;
+   outline: none !important;
+   transition: none !important;
+   border: 1px solid transparent !important;
+}
+
+/* cta button green-variant */
+.cta.green-variant a {
+   background-color: unset !important;
+   border: unset !important;
+}
+.cta.green-variant a:after {
+   background-color: #007530 !important;
+   color: black !important;
+}
+
+.cta.green-variant a:hover {
+   background-color: white !important;
+   color: black !important;
+   outline: none !important;
+   transition: none !important;
+   border: 1px solid transparent !important;
+}
