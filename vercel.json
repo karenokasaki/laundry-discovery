@@ -7,7 +7,7 @@
          "use": "@vercel/static"
       },
       {
-         "src": "/dist/assets/(.*)",
+         "src": "/public/assets/(.*)",
          "use": "@vercel/static"
       }
    ],
