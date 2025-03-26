@@ -174,7 +174,7 @@ async function combineComponents() {
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
    />
 
-   <link rel="stylesheet" href="/LG/css/hsad-style.css" />
+   <link rel="stylesheet" href="/public/LG/css/hsad-style.css" />
 
    <!-- Embedded CSS -->
    <style>
