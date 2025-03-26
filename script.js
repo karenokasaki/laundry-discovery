@@ -210,20 +210,6 @@ ${combinedJs}
       console.log(
          "Successfully generated index.html with embedded CSS and JS!"
       );
-
-      // Create vercel.json in root if it doesn't exist
-      const vercelJsonPath = path.join(rootDir, "vercel.json");
-      const vercelConfig = {
-         version: 2,
-         buildCommand: false,
-         devCommand: false,
-         installCommand: false,
-         public: true,
-         outputDirectory: "dist",
-      };
-
-      fs.writeFileSync(vercelJsonPath, JSON.stringify(vercelConfig, null, 2));
-      console.log("Created vercel.json configuration file");
    } catch (error) {
       console.error("Error:", error);
    }
