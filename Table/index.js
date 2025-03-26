@@ -258,10 +258,13 @@ $(document).ready(function () {
          // Toggle da visibilidade da comparison-wrapper
          if (isComparisonVisible) {
             $(".comparison-wrapper").slideUp(500);
-            $(".compare-tab img").attr("src", "/_assets/compare-models-down.png");
+            $(".compare-tab img").attr(
+               "src",
+               "/assets/compare-models-down.png"
+            );
          } else {
             $(".comparison-wrapper").slideDown(500);
-            $(".compare-tab img").attr("src", "/_assets/compare-models.png");
+            $(".compare-tab img").attr("src", "/assets/compare-models.png");
          }
 
          // Inverter o estado
