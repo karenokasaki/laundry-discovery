@@ -3,14 +3,18 @@
    "outputDirectory": "dist",
    "builds": [
       {
-         "src": "index.html",
+         "src": "dist/**",
          "use": "@vercel/static"
       }
    ],
    "routes": [
       {
-         "src": "/",
-         "dest": "index.html"
+         "src": "/_assets/(.*)",
+         "dest": "/_assets/$1"
+      },
+      {
+         "src": "/(.*)",
+         "dest": "/$1"
       }
    ]
 }
