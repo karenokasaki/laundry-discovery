@@ -1,7 +1,6 @@
 {
    "version": 2,
    "outputDirectory": "dist",
-   "buildCommand": false,
    "devCommand": false,
    "installCommand": false,
    "public": true
