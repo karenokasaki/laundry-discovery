@@ -260,11 +260,14 @@ $(document).ready(function () {
             $(".comparison-wrapper").slideUp(500);
             $(".compare-tab img").attr(
                "src",
-               "/assets/compare-models-down.png"
+               "/public/assets/compare-models-down.png"
             );
          } else {
             $(".comparison-wrapper").slideDown(500);
-            $(".compare-tab img").attr("src", "/assets/compare-models.png");
+            $(".compare-tab img").attr(
+               "src",
+               "/public/assets/compare-models.png"
+            );
          }
 
          // Inverter o estado

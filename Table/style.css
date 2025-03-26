@@ -344,7 +344,7 @@
 }
 
 #table .slick-next:before {
-   background-image: url("/_assets/arrow.png");
+   background-image: url("/public/assets/arrow.png");
    background-repeat: no-repeat !important;
    background-size: contain !important;
    background-position: center !important;
@@ -352,7 +352,7 @@
 }
 
 #table .slick-prev:before {
-   background-image: url("/_assets/arrow.png");
+   background-image: url("/public/assets/arrow.png");
    background-repeat: no-repeat !important;
    background-size: contain !important;
    background-position: center !important;

@@ -1025,7 +1025,7 @@ body > div {
 }
 
 #table .slick-next:before {
-   background-image: url("/_assets/arrow.png");
+   background-image: url("/public/assets/arrow.png");
    background-repeat: no-repeat !important;
    background-size: contain !important;
    background-position: center !important;
@@ -1033,7 +1033,7 @@ body > div {
 }
 
 #table .slick-prev:before {
-   background-image: url("/_assets/arrow.png");
+   background-image: url("/public/assets/arrow.png");
    background-repeat: no-repeat !important;
    background-size: contain !important;
    background-position: center !important;
@@ -1686,7 +1686,7 @@ body > div {
 /* desktop */
 @media (min-width: 1024px) {
    #pair .slick-next:before {
-      background-image: url("/_assets/arrow.png");
+      background-image: url("/public/assets/arrow.png");
       background-repeat: no-repeat !important;
       background-size: contain !important;
       background-position: center !important;
@@ -1694,7 +1694,7 @@ body > div {
    }
 
    #pair .slick-prev:before {
-      background-image: url("/_assets/arrow.png");
+      background-image: url("/public/assets/arrow.png");
       background-repeat: no-repeat !important;
       background-size: contain !important;
       background-position: center !important;
@@ -3583,11 +3583,14 @@ $(document).ready(function () {
             $(".comparison-wrapper").slideUp(500);
             $(".compare-tab img").attr(
                "src",
-               "/assets/compare-models-down.png"
+               "/public/assets/compare-models-down.png"
             );
          } else {
             $(".comparison-wrapper").slideDown(500);
-            $(".compare-tab img").attr("src", "/assets/compare-models.png");
+            $(".compare-tab img").attr(
+               "src",
+               "/public/assets/compare-models.png"
+            );
          }
 
          // Inverter o estado

@@ -160,7 +160,7 @@
 /* desktop */
 @media (min-width: 1024px) {
    #pair .slick-next:before {
-      background-image: url("/_assets/arrow.png");
+      background-image: url("/public/assets/arrow.png");
       background-repeat: no-repeat !important;
       background-size: contain !important;
       background-position: center !important;
@@ -168,7 +168,7 @@
    }
 
    #pair .slick-prev:before {
-      background-image: url("/_assets/arrow.png");
+      background-image: url("/public/assets/arrow.png");
       background-repeat: no-repeat !important;
       background-size: contain !important;
       background-position: center !important;
