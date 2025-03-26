@@ -4,7 +4,7 @@
  * This script combines individual HTML/JS/CSS components into a single HTML file.
  * CSS and JS are embedded directly in the HTML file rather than linked externally.
  * It processes components based on a configuration file, extracts the relevant HTML elements,
- * adjusts asset paths, and generates a complete HTML document.
+ * adjusts asset paths, and generates a complete HTML document in a 'dist' folder.
  *
  * Usage: node combine-components-embedded.js
  */
@@ -26,11 +26,18 @@ async function combineComponents() {
       // Project root directory
       const rootDir = process.cwd();
 
-      // Create assets directory in root if it doesn't exist
-      const assetsDir = path.join(rootDir, "_assets");
+      // Create dist directory if it doesn't exist
+      const distDir = path.join(rootDir, "dist");
+      if (!fs.existsSync(distDir)) {
+         mkdirp.sync(distDir);
+         console.log("Created dist directory in project root");
+      }
+
+      // Create assets directory in dist if it doesn't exist
+      const assetsDir = path.join(distDir, "_assets");
       if (!fs.existsSync(assetsDir)) {
          mkdirp.sync(assetsDir);
-         console.log("Created _assets directory in project root");
+         console.log("Created _assets directory in dist folder");
       }
 
       // Arrays to store component content and styles/scripts
@@ -54,7 +61,7 @@ async function combineComponents() {
          const cssPath = path.join(componentDir, "style.css");
          const jsPath = path.join(componentDir, "index.js");
 
-         // Copy component assets to root assets directory
+         // Copy component assets to dist assets directory
          const componentAssetsDir = path.join(componentDir, "assets");
          if (fs.existsSync(componentAssetsDir)) {
             const files = fs.readdirSync(componentAssetsDir);
@@ -62,7 +69,7 @@ async function combineComponents() {
                const sourcePath = path.join(componentAssetsDir, file);
                const destPath = path.join(assetsDir, file);
                fs.copyFileSync(sourcePath, destPath);
-               console.log(`Copied asset: ${file}`);
+               console.log(`Copied asset: ${file} to dist/_assets`);
             }
          }
 
@@ -166,10 +173,10 @@ ${combinedJs}
 </body>
 </html>`;
 
-      // Save final HTML to index.html in root directory
-      fs.writeFileSync("index.html", finalHtml);
+      // Save final HTML to index.html in dist directory
+      fs.writeFileSync(path.join(distDir, "index.html"), finalHtml);
       console.log(
-         "Successfully generated index.html with embedded CSS and JS!"
+         "Successfully generated dist/index.html with embedded CSS and JS!"
       );
    } catch (error) {
       console.error("Error:", error);

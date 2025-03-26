@@ -1,0 +1,3730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Lg Laundry Washing Discovery</title>
+   <meta name="description" content="Lg Laundry Washing Discovery landing page" />
+
+   <!-- carousel -->
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+   />
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+   />
+
+   <link rel="stylesheet" href="/LG/css/hsad-style.css" />
+
+   <!-- Embedded CSS -->
+   <style>
+/* global.css */
+@font-face {
+   font-family: "LG EI";
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+   src: local("☺"), url("/LG/fonts/LG EI_Text Regular.woff2") format("woff2"),
+      url("/LG/fonts/LG EI_Text Regular.woff") format("woff"),
+      url("/LG/fonts/LG EI_Text Regular.eot") format("eot");
+}
+@font-face {
+   font-family: "LG EI";
+   font-display: swap;
+   font-weight: 550;
+   font-style: normal;
+   src: local("☺"),
+      url("/LG/fonts/LG EI_Headline Semibold.woff2") format("woff2"),
+      url("/LG/fonts/LG EI_Headline Semibold.woff") format("woff"),
+      url("/LG/fonts/LG EI_Headline Semibold.eot") format("eot");
+}
+@font-face {
+   font-family: "LG EI";
+   font-display: swap;
+   font-weight: 600;
+   font-style: normal;
+   src: local("☺"), url("/LG/fonts/LG EI_Text SemiBold.woff2") format("woff2"),
+      url("/LG/fonts/LG EI_Text SemiBold.woff") format("woff"),
+      url("/LG/fonts/LG EI_Text SemiBold.eot") format("eot");
+}
+@font-face {
+   font-family: "LG EI";
+   font-display: swap;
+   font-weight: 700;
+   font-style: normal;
+   src: local("☺"), url("/LG/fonts/LG EI_Text Bold.woff2") format("woff2"),
+      url("/LG/fonts/LG EI_Text Bold.woff") format("woff"),
+      url("/LG/fonts/LG EI_Text Bold.eot") format("eot");
+}
+
+body {
+   background-color: white;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+span,
+img,
+video {
+   margin: 0;
+   padding: 0;
+   font-family: "LG EI", sans-serif;
+}
+
+body > div {
+   margin: 0 auto;
+}
+
+/* carousel global */
+
+/* carousel black */
+/* size of dots & color of dots */
+.slick-dots li.slick-active button:before,
+.slick-dots li button::before {
+   width: 8px;
+   height: 8px;
+   background-color: #cbc8c2;
+   border: 1px solid #cbc8c2;
+}
+
+/* color of dot selected */
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before,
+.slick-dots li.slick-active button::before {
+   background-color: black !important;
+   border: 1px solid black !important;
+}
+
+/* spacing between the dots */
+.slick-dots li {
+   width: unset;
+   height: unset;
+   margin-right: 4px;
+}
+
+/* color of arrows */
+.slick-prev:before,
+.slick-next:before {
+   filter: grayscale(100%);
+}
+
+.slick-arrow:focus,
+.slick-arrow:active {
+   outline: none !important;
+   -webkit-tap-highlight-color: transparent;
+   box-shadow: none !important;
+}
+
+/* Para dispositivos com touch */
+.slick-arrow {
+   -webkit-tap-highlight-color: transparent;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+.slick-disabled {
+   filter: grayscale(100%);
+}
+
+/* cta button red-variant */
+.cta {
+   height: 40px !important;
+   width: 100% !important;
+}
+
+.cta a {
+   background-color: white !important;
+   color: var(--Primary-Contrast, #fff) !important;
+   text-align: center !important;
+   font-family: "LG EI" !important;
+   font-size: 16px !important;
+   font-style: normal !important;
+   font-weight: 600 !important;
+   line-height: 120% !important; /* 19.2px */
+   text-decoration: none !important;
+   text-transform: capitalize !important;
+   background-color: #ea1917 !important;
+   transition: none !important;
+   padding: 10.5px 0 !important;
+   width: 100% !important;
+}
+
+.cta a:after {
+   transition: none !important;
+   background-color: #ea1917 !important;
+   color: black;
+}
+
+.cta a:hover {
+   background-color: white !important;
+   color: black !important;
+   outline: 1px solid black !important;
+   transition: none !important;
+}
+
+/* cta button white-variant */
+.cta.white-variant.cta.white-variant a {
+   color: black !important;
+   background-color: unset !important;
+   border: 1px solid var(--Grey-Grey-500, #646464) !important;
+}
+
+.cta.white-variant.cta.white-variant a:after {
+   background-color: white !important;
+   color: black !important;
+}
+
+.cta.white-variant.cta.white-variant a:hover {
+   background-color: var(--Grey-Grey-500, #ea1917) !important;
+   color: white !important;
+   outline: none !important;
+   transition: none !important;
+   border: 1px solid transparent !important;
+}
+
+/* cta button green-variant */
+.cta.green-variant a {
+   background-color: unset !important;
+   border: unset !important;
+}
+.cta.green-variant a:after {
+   background-color: #007530 !important;
+   color: black !important;
+}
+
+.cta.green-variant a:hover {
+   background-color: white !important;
+   color: black !important;
+   outline: none !important;
+   transition: none !important;
+   border: 1px solid transparent !important;
+}
+
+
+/* Hero/style.css */
+#hero {
+   margin: 0;
+   padding: 0;
+   font-family: "LG EI", sans-serif;
+}
+
+.hero-wrapper {
+   margin: 0 auto;
+   position: relative;
+   max-width: 1600px;
+   width: 100%;
+   overflow: hidden;
+}
+
+.hero-video-wrapper {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   z-index: 0;
+   max-height: 824px;
+}
+
+.hero-badge {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   z-index: 1;
+   max-width: 80px;
+}
+
+.hero-badge img {
+   width: 100%;
+   height: auto;
+}
+
+.hero-content-wrapper {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   text-align: left;
+   color: #fff;
+   z-index: 3;
+}
+
+.hero-content {
+   padding: 24px 24px 50px 24px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.hero-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 2;
+   background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 76%
+   );
+   pointer-events: none;
+}
+
+.hero-eyebrow {
+   color: white;
+   font-size: 12px;
+   font-style: normal;
+   /* font-weight: 700; */
+   line-height: 112%;
+   letter-spacing: 0.12px;
+   text-transform: uppercase;
+}
+
+.hero-title {
+   color: white;
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%;
+   letter-spacing: -0.36px;
+}
+
+.hero-copy {
+   color: white;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%;
+}
+
+@media (min-width: 500px) {
+   .hero-wrapper {
+      max-height: unset;
+   }
+
+   .hero-badge {
+      max-width: 115px;
+      top: 30px;
+      right: 19px;
+   }
+
+   .hero-title {
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 67.2px */
+      letter-spacing: -0.6px;
+   }
+
+   .hero-content {
+      max-width: 621px;
+   }
+}
+
+@media (min-width: 1023px) {
+   .hero-overlay {
+      background: linear-gradient(
+         -90deg,
+         rgba(0, 0, 0, 0) 0%,
+         rgba(0, 0, 0, 0.8) 76%
+      );
+   }
+   .hero-content-wrapper {
+      height: 100%;
+   }
+   .hero-content {
+      height: 100%;
+      justify-content: center;
+      padding: 0;
+      margin-left: 9%;
+      max-width: 440px;
+   }
+}
+
+
+/* Banner/style.css */
+#banner {
+   margin: 0;
+   padding: 0;
+   font-family: "LG EI", sans-serif;
+}
+
+.banner-wrapper {
+   margin: 0 auto;
+   position: relative;
+   max-width: 1600px;
+   width: 100%;
+   overflow: hidden;
+   background-color: #e6e1d6;
+   display: flex;
+   height: 135px;
+   flex-direction: column;
+   padding-top: 35px;
+}
+
+.banner-item-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 12px;
+   height: 40px;
+}
+
+.banner-item-copy p {
+   color: black;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%; /* 21.6px */
+   letter-spacing: -0.36px;
+}
+
+#banner .slick-slide {
+   margin: 0 15px;
+}
+
+#banner .slick-track:first-child {
+   margin-left: 20px;
+}
+
+/* height of arrows */
+#banner .slick-prev,
+#banner .slick-next {
+   top: 82%;
+}
+
+/* dots position */
+.slick-dots {
+   margin-top: 20px !important;
+}
+
+/* breaking point tablet */
+@media (min-width: 760px) {
+   .slick-track:first-child {
+      margin-left: unset;
+   }
+
+   #banner .slick-dots li {
+      width: 8px;
+      height: 8px;
+   }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+   .banner-wrapper {
+      flex-direction: row;
+      height: unset;
+      padding: 24px 0;
+      align-items: center;
+      justify-content: space-around;
+   }
+}
+
+
+/* Cards/style.css */
+#cards {
+   margin: 0;
+   padding: 0;
+   font-family: "LG EI", sans-serif;
+   margin-bottom: 70px;
+   background-color: white;
+}
+
+.cards-header {
+   max-width: 1600px;
+   width: 100%;
+   margin: 0 auto;
+   margin-top: 74px;
+   margin-bottom: 45px;
+}
+
+.cards-header-wrapper {
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 0 24px;
+}
+
+.cards-item {
+   max-width: 268px;
+}
+
+.cards-title {
+   color: var(--Text-Primary, #000);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 40.32px */
+   letter-spacing: -0.36px;
+}
+
+.cards-copy {
+   color: #000;
+   font-family: "LG EI";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+   text-align: left;
+}
+
+.cards-image {
+   width: 100%;
+   aspect-ratio: 1 / 1;
+   border-radius: 32px;
+   overflow: hidden;
+   margin-bottom: 30px;
+}
+
+.cards-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.cards-item-title {
+   color: var(--Text-Primary, rgba(27, 26, 30, 0.87));
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%; /* 26.4px */
+   margin-bottom: 16px;
+}
+
+.cards-item-description {
+   color: var(--Text-Secondary, #333);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+}
+
+.cards-item-description a {
+   color: var(--Text-Secondary, #333);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%;
+   text-decoration-line: underline;
+   text-decoration-style: solid;
+   text-decoration-skip-ink: none;
+   text-decoration-thickness: auto;
+   text-underline-offset: auto;
+   text-underline-position: from-font;
+}
+
+.cta.cta-cards {
+   margin-top: 24px;
+}
+
+.cards-wrapper .slick-prev,
+.cards-wrapper .slick-next {
+   top: 100%;
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   #cards {
+      margin-bottom: 90px;
+   }
+
+   .cards-header {
+      margin-top: 60px;
+   }
+
+   .cards-title {
+      text-align: center;
+   }
+
+   .cards-copy {
+      text-align: center;
+   }
+
+   .cta.cta-cards {
+      max-width: 94px;
+      margin-top: 21px;
+   }
+
+   .cta.cta-cards a {
+      color: var(--Primary-Contrast, #fff) !important;
+      text-align: center !important;
+      font-size: 13.653px !important;
+      font-style: normal !important;
+      font-weight: 600 !important;
+      line-height: 120% !important; /* 16.384px */
+      padding: 9px 14px !important;
+   }
+
+   .cards-item-description {
+      text-align: left;
+      color: var(--Text-Secondary, #333);
+      font-size: 13.653px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 18.842px */
+   }
+
+   .cards-item-title {
+      text-align: left;
+      color: var(--Text-Primary, rgba(27, 26, 30, 0.87));
+      font-size: 20.48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 24.576px */
+      letter-spacing: -0.41px;
+      margin-bottom: 13.5px;
+   }
+
+   .cards-item-description a {
+      font-size: 13.653px;
+   }
+}
+
+/* desktop */
+@media (min-width: 900px) {
+   #cards {
+      margin-bottom: 160px;
+   }
+
+   .cards-item {
+      max-width: unset;
+      height: 100%;
+   }
+   .cards-image {
+      max-width: 396px;
+      width: 100%;
+   }
+
+   .cards-wrapper {
+      display: flex;
+      width: 100%;
+      max-width: 1240px;
+      gap: 24px;
+      margin: 0 auto;
+      position: relative;
+   }
+
+   .cards-header {
+      margin-top: 100px;
+   }
+
+   .cards-header-wrapper {
+      max-width: 984px;
+   }
+
+   .cards-title {
+      color: #000;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 53.76px */
+      letter-spacing: -0.48px;
+      text-align: center;
+   }
+
+   .cards-copy {
+      color: #000;
+      font-family: "LG EI";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 22.08px */
+      text-align: center;
+   }
+
+   .cards-item-description {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 22.08px */
+   }
+
+   .cards-item-description a {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 22.08px */
+   }
+
+   .cards-item-title {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 28.8px */
+      letter-spacing: -0.48px;
+   }
+
+   .cta.cta-cards {
+      margin-top: 24px;
+      max-width: 110px;
+   }
+
+   .cta.cta-cards a {
+      font-size: 16px !important;
+      font-weight: 600 !important;
+      line-height: 120% !important; /* 19.2px */
+      padding: 10.5px 16px !important;
+   }
+}
+
+
+/* Table/style.css */
+/* Table Component Styles */
+#table {
+   background-color: white;
+}
+
+.table-component-wrapper {
+   padding: 0 59px;
+   max-width: 1600px;
+   margin: 0 auto;
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.comparison-wrapper {
+   max-width: 1408px;
+   margin: 0 auto;
+}
+
+/* Header */
+.table-header {
+   max-width: 780px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin: 0 auto;
+   margin-bottom: 28px;
+   padding: 0 45px;
+}
+
+.table-eyebrow {
+   color: var(--Grey-Grey-500, #646464);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 112%; /* 13.44px */
+   letter-spacing: 0.12px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.table-title {
+   color: var(--Text-Primary, #000);
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 53.76px */
+   letter-spacing: -0.48px;
+   text-align: center;
+}
+
+.table-description {
+   color: var(--Text-Primary, #000);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+   text-align: center;
+}
+
+/* Tabs */
+.tabs-container {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 52px;
+}
+
+.tab-btn div {
+   background: none;
+   border: none;
+   padding: 7px 24px;
+   padding-bottom: 5px;
+   font-size: 18px;
+   cursor: pointer;
+   border-bottom: 2px solid #cbc8c2;
+}
+
+.tab-btn div span {
+   color: var(--Text-Primary, #000);
+   font-size: 28px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%; /* 33.6px */
+   letter-spacing: -0.56px;
+}
+
+.tab-btn.active div {
+   border-bottom: 2px solid red;
+}
+
+/* Tabela */
+.comparison-table {
+   display: flex;
+   border: 1px solid #ccc;
+   border-radius: 32px;
+   overflow: hidden;
+   display: none; /* Esconde todas as tabelas por padrão */
+}
+
+.comparison-table.active {
+   display: flex; /* Mostra apenas a tabela ativa */
+}
+
+/* Coluna fixa (esquerda) */
+.fixed-column {
+   width: 260px;
+   flex-shrink: 0;
+   border-right: 1px solid #ccc;
+}
+
+.fixed-column > div {
+   padding: 0 16.5px 0 20px;
+   border-bottom: 1px solid #ccc;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+
+.fixed-column div span {
+   width: 13px;
+   height: 13px;
+   cursor: pointer;
+}
+.fixed-column div span img {
+   width: 100%;
+   height: auto;
+}
+
+.fixed-column > div:nth-child(odd) {
+   background-color: #f0ece4;
+}
+
+.fixed-column > div:first-child {
+   height: 233px;
+   background-color: #333;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 120%; /* 24px */
+   letter-spacing: -0.4px;
+
+   padding-left: 28px;
+   padding-right: 32px;
+}
+
+.fixed-column > div:last-child {
+   height: 80px;
+   border-bottom: unset;
+}
+
+/* tooltips */
+.tooltip {
+   position: absolute;
+   background-color: white !important;
+   color: black;
+   padding: 8px 12px;
+   border-radius: 4px;
+   font-size: 14px;
+   max-width: 250px;
+   width: 100%;
+   display: none;
+   z-index: 100;
+   top: 50%;
+   transform: translateY(-50%);
+   right: -96%;
+   border-radius: 20px;
+   display: none;
+   padding: 20px 30px;
+
+   color: #373538;
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 122%; /* 14.64px */
+
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip::after {
+   content: "";
+   position: absolute;
+   left: -18px;
+   top: 50%;
+   transform: translateY(-50%);
+   border-width: 10px;
+   border-style: solid;
+   border-color: transparent white transparent transparent;
+}
+
+/* Coluna de produtos (direita) */
+.products-carousel {
+   flex-grow: 1;
+   width: calc(100% - 200px);
+}
+
+.product-column {
+   width: 180px;
+   border-right: 1px solid #ccc;
+}
+
+.product-column > div {
+   padding: 10px;
+   border-bottom: 1px solid #ccc;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 19.32px */
+}
+
+/* info icon in product */
+.product-column > div > .info-icon {
+   width: 13px;
+   height: auto;
+   position: absolute;
+   right: 8.5px;
+   cursor: pointer;
+}
+
+.product-column > div > .tooltip {
+   right: -105%;
+}
+
+.product-column > div:nth-child(odd) {
+   background-color: #f0ece4;
+}
+
+.product-column > div:last-child {
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-bottom: unset;
+}
+
+.product-column .product-image {
+   height: 233px;
+   background-color: #333 !important;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+
+.product-image img {
+   max-height: 150px;
+   max-width: 100%;
+   margin-bottom: 10px;
+}
+
+.product-image span {
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 110%; /* 19.8px */
+   letter-spacing: -0.36px;
+}
+
+/* higher cell */
+.cell-md.cell-md {
+   height: 73px;
+}
+
+.product-column .cta {
+   height: 80px;
+   max-width: 112px;
+}
+
+.custom-navigation {
+   margin-top: 20px;
+   text-align: center;
+   position: relative;
+   z-index: 2;
+}
+
+.circle-white {
+   width: 20px;
+   height: 20px;
+   background-color: white;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 0 2px;
+   border: 1px solid #6b6b6b;
+}
+
+.circle-silver {
+   width: 20px;
+   height: 20px;
+   background-color: #6b6b6b;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 0 2px;
+   border: 1px solid #6b6b6b;
+}
+
+.circle-dark-silver {
+   width: 20px;
+   height: 20px;
+   background-color: #343233;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 0 2px;
+   border: 1px solid #333;
+}
+
+#table .slick-slide {
+   margin: 0 !important;
+}
+
+#table .slick-dotted.slick-slider {
+   margin: 0 !important;
+}
+
+/* customization on cells */
+.cell-info img {
+   max-width: 112px;
+   width: 100%;
+}
+
+/* customization arrows and dots */
+#custom-arrows {
+   position: relative;
+}
+
+#table .slick-arrow {
+   outline: none !important;
+}
+
+#table .slick-next:before {
+   background-image: url("/_assets/arrow.png");
+   background-repeat: no-repeat !important;
+   background-size: contain !important;
+   background-position: center !important;
+   filter: none !important;
+}
+
+#table .slick-prev:before {
+   background-image: url("/_assets/arrow.png");
+   background-repeat: no-repeat !important;
+   background-size: contain !important;
+   background-position: center !important;
+   filter: none !important;
+   transform: rotate(180deg);
+}
+
+#table .slick-dots {
+   transform: translateY(30%) !important;
+}
+
+#table .slick-dots li {
+   margin-right: 10px !important;
+   width: 12px !important;
+   height: 12px !important;
+}
+
+#table .slick-dots li.slick-active button:before,
+#table .slick-dots li button::before {
+   width: 12px;
+   height: 12px;
+}
+
+#table .slick-dots li.slick-active button:before,
+.slick-dots li button::before {
+   background-color: #ea1917 !important;
+   border: 1px solid #ea1917 !important;
+}
+
+#table .slick-dots li button:before,
+.slick-dots li button::before {
+   background-color: #1b1a1e42 !important;
+   border: 1px solid #1b1a1e42 !important;
+}
+
+.compare-tab {
+   max-width: 1600px;
+   margin: 0 auto;
+   width: 100%;
+   height: 40px;
+   border-radius: 0px 0px 64px 64px;
+   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+   position: relative;
+   background-color: white;
+}
+
+.compare-tab img {
+   position: absolute;
+   max-width: 200px;
+   top: 85%;
+   left: 50%;
+   transform: translateX(-50%);
+   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+   .products-carousel {
+      width: calc(100% - 260px);
+   }
+}
+
+/* tablet */
+@media (max-width: 800px) {
+   .table-title {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 40.32px */
+      letter-spacing: -0.36px;
+   }
+
+   .table-header {
+      margin-bottom: 31px;
+   }
+
+   .tab-btn div {
+      font-size: 16px;
+      padding: 11px 24px;
+   }
+
+   .tabs-container {
+      margin-bottom: 46px;
+   }
+
+   .fixed-column div:first-child {
+      padding-left: 30px;
+   }
+
+   .tab-btn div span {
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 26.4px */
+   }
+
+   .products-carousel {
+      width: calc(100% - 185px);
+   }
+
+   .fixed-column {
+      width: 185px;
+   }
+   .fixed-column div {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 19.32px */
+      padding-left: 30px;
+   }
+
+   .products-carousel {
+      width: calc(100% - 185px); /* size of the fixed-column */
+   }
+
+   .product-column > div > .info-icon {
+      display: none;
+   }
+
+   .compare-tab {
+      border-radius: 0;
+      box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+      position: relative;
+   }
+
+   .custom-navigation {
+      margin-top: 50px;
+   }
+}
+
+/* mobile */
+@media (max-width: 580px) {
+   .tabs-container .slick-arrow {
+      top: 50%;
+   }
+
+   .tabs-container .slick-prev {
+      left: calc(45% - 8.625rem);
+   }
+
+   .tabs-container .slick-next {
+      right: calc(45% - 8.625rem);
+   }
+
+   .tab-btn div {
+      width: fit-content;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 6.5px;
+   }
+
+   .table-component-wrapper {
+      padding: 0 25px;
+   }
+
+   .table-header {
+      padding: 0;
+      margin-bottom: 41px;
+   }
+
+   .table-title {
+      text-align: left;
+   }
+
+   .table-description {
+      text-align: left;
+   }
+
+   .table-eyebrow {
+      text-align: left;
+   }
+
+   .fixed-column {
+      width: 185px;
+   }
+
+   .products-carousel {
+      width: calc(100% - 185px);
+   }
+
+   /* tooltip */
+   .tooltip.tooltip {
+      padding: 12px 18px;
+      border-radius: 4px;
+      max-width: 250px;
+      width: 100%;
+      top: -50%;
+      left: 50%;
+      transform: translateY(-80%);
+   }
+
+   .tooltip::after {
+      left: 60px;
+      top: 100%;
+      transform: translateY(-3%);
+      border-width: 10px;
+      border-color: white transparent transparent transparent;
+   }
+
+   .compare-tab {
+      margin-top: 40px;
+   }
+
+   .custom-navigation {
+      margin-top: 35px;
+   }
+}
+
+
+/* Confidence/style.css */
+#confidence {
+   margin: 0;
+   padding: 0;
+   background-color: #f0ece4;
+   padding-top: 110px;
+   margin-top: -30px;
+   padding-bottom: 55px;
+}
+
+/* Header */
+.confidence-header {
+   max-width: 780px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin: 0 auto;
+   margin-bottom: 28px;
+   padding: 0 24px;
+}
+
+.confidence-eyebrow {
+   color: var(--Grey-Grey-500, #646464);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 112%; /* 13.44px */
+   letter-spacing: 0.12px;
+   text-transform: uppercase;
+}
+
+.confidence-title {
+   color: var(--Text-Primary, #000);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 40.32px */
+   letter-spacing: -0.36px;
+}
+
+.confidence-description {
+   color: var(--Text-Primary, #000);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+}
+
+.confidence-carousel {
+   margin-left: 14px;
+}
+
+.confidence-carousel .slick-slide {
+   max-width: 350px !important;
+}
+
+.confidence-carousel .slick-track {
+   display: flex !important;
+}
+
+.confidence-carousel .slick-track > :last-child {
+   margin-right: 24px !important;
+}
+
+/* Card item */
+.confidence-card-eyebrow {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 112%; /* 13.44px */
+   letter-spacing: 0.12px;
+   text-transform: uppercase;
+}
+
+.confidence-card-title {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%; /* 21.6px */
+}
+
+.confidence-card-description {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 19.32px */
+}
+
+.confidence-card-description span a {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%;
+   text-decoration-line: underline;
+   text-decoration-style: solid;
+   text-decoration-skip-ink: none;
+   text-decoration-thickness: auto;
+   text-underline-offset: auto;
+}
+
+.confidence-card {
+   position: relative;
+   aspect-ratio: 269 / 384;
+   min-width: 269px;
+   width: 100%;
+   border-radius: 24px;
+   overflow: hidden;
+}
+
+.confidence-card-image {
+   position: relative;
+   height: 100%;
+   top: 0;
+   left: 0;
+   width: 100%;
+}
+
+.confidence-card-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 8px;
+   border-radius: 24px;
+   overflow: hidden;
+}
+
+.confidence-card-content {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   justify-content: flex-end;
+   padding: 24px;
+}
+
+.confidence-card-content .cta {
+   margin-top: 8px;
+}
+
+.confidence-disclaimer {
+   padding: 0 24px;
+}
+.confidence-disclaimer p {
+   color: var(--Text-Primary, rgba(27, 26, 30, 0.87));
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 122%; /* 14.64px */
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   #confidence {
+      padding-bottom: 67px;
+   }
+
+   .confidence-carousel {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 15px;
+      margin-left: 59px;
+      margin-right: 59px;
+      justify-content: center;
+   }
+
+   .confidence-header {
+      padding: 0 59px;
+      margin-bottom: 44px;
+   }
+
+   .confidence-disclaimer {
+      padding: 0 59px;
+   }
+
+   .confidence-card {
+      max-width: 350px;
+   }
+
+   .confidence-card-eyebrow {
+      font-size: 13.06px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 112%; /* 14.627px */
+      letter-spacing: 0.131px;
+      text-transform: uppercase;
+   }
+
+   .confidence-card-title {
+      font-size: 19.589px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 23.507px */
+   }
+
+   .confidence-card-description {
+      font-size: 15.236px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 21.026px */
+   }
+
+   .confidence-card-description span a {
+      font-size: 15.236px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 21.026px */
+   }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+   #confidence {
+      padding-bottom: 123px;
+   }
+
+   .confidence-header {
+      padding: 0 59px;
+      margin-bottom: 50px;
+      max-width: 1100px;
+   }
+
+   .confidence-eyebrow,
+   .confidence-description {
+      text-align: center;
+   }
+
+   .confidence-title {
+      text-align: center;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 53.76px */
+      letter-spacing: -0.48px;
+   }
+
+   .confidence-carousel {
+      display: flex;
+      gap: 24px;
+      margin-bottom: 20px;
+      margin-left: 59px;
+      margin-right: 59px;
+   }
+
+   .confidence-disclaimer {
+      padding: 0 59px;
+   }
+
+   .confidence-card {
+      border-radius: 32px;
+      aspect-ratio: 1/1;
+      max-width: 606px;
+   }
+
+   .confidence-card-image img {
+      border-radius: 32px;
+   }
+
+   .confidence-disclaimer {
+      max-width: 1354px;
+      margin: 0 auto;
+      padding: 0 59px;
+   }
+
+   .confidence-card .cta {
+      max-width: 210px !important;
+   }
+
+   .confidence-card .cta a {
+      padding: 10.5px 16px !important;
+   }
+}
+
+
+/* Pair/style.css */
+#pair {
+   margin: 0;
+   padding: 0;
+   background-color: white;
+   padding-top: calc(67px + 25px);
+   margin-top: -25px;
+   padding-bottom: 70px;
+   border-radius: 32px;
+}
+
+/* Header */
+.pair-header {
+   max-width: 780px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   padding: 0 24px;
+}
+
+.pair-eyebrow {
+   color: var(--Grey-Grey-500, #646464);
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 112%; /* 13.44px */
+   letter-spacing: 0.12px;
+   text-transform: uppercase;
+}
+
+.pair-title {
+   color: var(--Text-Primary, #000);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 40.32px */
+   letter-spacing: -0.36px;
+}
+
+.pair-description {
+   color: var(--Text-Primary, #000);
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 22.08px */
+}
+
+/* card */
+
+.pair-card {
+   position: relative;
+}
+
+.pair-card-content {
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 20px 22px;
+}
+
+.pair-card-image {
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+.pair-card-image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 32px;
+   overflow: hidden;
+}
+
+.pair-card-title {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 120%; /* 21.6px */
+}
+
+.pair-card-description {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 19.32px */
+}
+
+.pair-card-content .cta-pair {
+   margin-top: 8px;
+}
+
+.pair-main-container {
+   padding: 0 24px;
+}
+
+/* carousel  */
+.pair-carousel .slick-track {
+   display: flex !important;
+}
+
+.pair-carousel-card {
+   width: 100%;
+   height: 100%;
+}
+
+.pair-carousel-card img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 32px;
+   overflow: hidden;
+}
+
+.pair-carousel .slick-dots {
+   margin-top: 30px !important;
+}
+
+.pair-carousel {
+   margin-bottom: 48px !important;
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   .pair-main-container {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding: 0 60px;
+      justify-content: center;
+   }
+
+   .pair-carousel {
+      width: 59%;
+      margin-bottom: 57px !important;
+   }
+
+   .pair-header {
+      margin-bottom: 55px;
+      padding: 0 60px;
+   }
+
+   .pair-card-image {
+      margin-bottom: 0;
+   }
+
+   .pair-card-content {
+      padding: 25px 19px;
+   }
+
+   .pair-card-content .cta-pair {
+      margin-top: 0;
+   }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+   #pair .slick-next:before {
+      background-image: url("/_assets/arrow.png");
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      background-position: center !important;
+      filter: none !important;
+   }
+
+   #pair .slick-prev:before {
+      background-image: url("/_assets/arrow.png");
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      background-position: center !important;
+      filter: none !important;
+      transform: rotate(180deg);
+   }
+
+   #pair .slick-dots li.slick-active button:before,
+   #pair .slick-dots li button::before {
+      background-color: #ea1917 !important;
+      border: 1px solid #ea1917 !important;
+   }
+
+   #pair .slick-dots li button:before,
+   #pair .slick-dots li button::before {
+      background-color: #1b1a1e42 !important;
+      border: 1px solid #1b1a1e42 !important;
+   }
+
+   .pair-main-container {
+      gap: 43px;
+   }
+
+   .pair-header {
+      max-width: 982px;
+   }
+
+   .pair-eyebrow {
+      text-align: center;
+   }
+
+   .pair-title {
+      color: var(--Text-Primary, #000);
+      text-align: center;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 53.76px */
+      letter-spacing: -0.48px;
+   }
+
+   .pair-description {
+      color: var(--Text-Primary, #000);
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 22.08px */
+   }
+
+   .pair-carousel {
+      max-width: 1015px;
+      width: 100%;
+   }
+}
+
+
+/* Thinq/style.css */
+#thinq {
+   margin: 0;
+   padding: 0;
+   background-color: #f0ece4;
+   padding-top: 107px;
+   margin-top: -30px;
+   padding-bottom: 58px;
+}
+
+.thinq-bg {
+   color: white;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 24px;
+}
+
+.thinq-bg .thinq-image {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   border-radius: 32px;
+   overflow: hidden;
+}
+
+.thinq-content-wrapper {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+
+.thinq-content {
+   position: relative;
+   padding: 0 24px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.thinq-title {
+   color: var(--Warm-Gray-Light-Gray-00, #f9f7f1);
+   font-size: 36px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 40.32px */
+   letter-spacing: -0.36px;
+   margin-bottom: 16px;
+   margin-top: 34px;
+}
+
+.thinq-description {
+   color: var(--Primary-Contrast, #fff);
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 24.84px */
+}
+
+.thinq-logo {
+   max-width: 105px;
+   margin-top: auto;
+   padding-left: 11px;
+}
+
+.thinq-cta {
+   margin-top: 19px;
+   margin-bottom: 24px;
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   #thinq {
+      padding-top: 85px;
+      padding-bottom: 85px;
+   }
+
+   .thinq-content {
+      max-width: 415px;
+   }
+
+   .thinq-description {
+      color: var(--Primary-Contrast, #fff);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 138%; /* 24.84px */
+   }
+
+   .thinq-logo {
+      position: absolute;
+      bottom: 55px;
+      left: 25px;
+   }
+
+   .thinq-cta {
+      width: 120px !important;
+      margin-bottom: 0 !important;
+      margin-top: 16px !important;
+   }
+
+   .thinq-logo {
+      max-width: 125px;
+      width: 100%;
+   }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+   #thinq {
+      width: 100%;
+      padding: 100px 0;
+   }
+
+   .thinq-wrapper {
+      max-width: 1600px;
+      margin: 0 auto;
+      position: relative;
+   }
+
+   .thinq-bg {
+      margin: 0 auto;
+      max-width: 1488px;
+   }
+
+   .thinq-content {
+      position: unset;
+      justify-content: center;
+      padding-left: 68px;
+   }
+
+   .thinq-title {
+      color: var(--Warm-Gray-Light-Gray-00, #f9f7f1);
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: 112%; /* 40.32px */
+      letter-spacing: -0.36px;
+      margin-top: unset;
+   }
+
+   .thinq-logo {
+      max-width: 200px;
+      width: 100%;
+      right: 40px;
+      top: 40px;
+      bottom: unset;
+      left: unset;
+   }
+}
+
+
+/* Review/style.css */
+/* Review Component Styles */
+
+#review {
+   background-color: #f0ece4;
+   padding-bottom: 20px;
+}
+
+.review-card {
+   background: #f5f5f5;
+   border-radius: 64px 64px 64px 0px;
+   padding: 32px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
+.review-quote {
+   width: 40px;
+   height: 40px;
+}
+
+.review-quote img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.review-description {
+   color: var(--Text-Primary, rgba(27, 26, 30, 0.87));
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 550;
+   line-height: 112%; /* 33.6px */
+   letter-spacing: -0.3px;
+}
+
+.review-name {
+   color: var(--Text-Secondary, rgba(27, 26, 30, 0.6));
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 109.09%; /* 24px */
+   margin-top: auto;
+}
+
+.review-stars {
+   color: #6f000f;
+   font-size: 22px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 109.09%; /* 24px */
+}
+.review-read {
+   text-align: right;
+}
+.review-read a {
+   color: #6f000f;
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 138%; /* 24.84px */
+   text-decoration: underline;
+   text-underline-offset: 5px;
+   text-decoration-thickness: 1px;
+   cursor: pointer;
+}
+
+.review-carousel .slick-track {
+   display: flex !important;
+}
+
+.review-carousel-item {
+   min-width: 335px;
+   margin: 0 20px !important;
+   height: 100%;
+   display: flex !important;
+}
+
+.review-carousel .slick-slide {
+   height: inherit !important;
+   display: flex !important;
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   .review-carousel-item {
+      margin: 0 18px !important;
+   }
+
+   .review-carousel {
+      margin-left: 30px;
+   }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+   #review {
+      padding-bottom: 100px;
+   }
+   .review-wrapper {
+      max-width: 1600px;
+      margin: 0 auto;
+   }
+   .review-carousel {
+      display: flex;
+   }
+}
+
+
+/* Footer/style.css */
+/* Footer Component Styles */
+
+#footer {
+   background: var(--Grey-Grey-100, #f0ece4);
+   width: 100%;
+   padding-bottom: 100px;
+}
+
+.footer-wrapper {
+   max-width: 1600px;
+   margin: 0 auto;
+}
+
+.footer-image {
+   width: fit-content;
+   margin: 0 auto;
+   padding-bottom: 34px;
+   max-width: 255px;
+}
+
+.footer-image img {
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   border-radius: 24px;
+}
+
+.footer-disclaimer {
+   padding: 0 22px;
+}
+
+.footer-disclaimer div {
+   display: flex;
+   gap: 8px;
+   color: rgba(0, 0, 0, 0.6);
+}
+
+.footer-disclaimer div p {
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 122%; /* 14.64px */
+}
+
+/* tablet */
+@media (min-width: 760px) {
+   .footer-image {
+      padding-bottom: 51px;
+      max-width: 400px;
+   }
+
+   .footer-disclaimer {
+      padding: 0 70px;
+   }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+   .footer-image {
+      padding-bottom: 100px;
+   }
+}
+
+   </style>
+</head>
+<body>
+   <div id="hero">
+         <div class="hero-wrapper">
+            <div class="hero-video-wrapper">
+               <div class="hero-overlay"></div>
+               <video autoplay="" muted="" loop="">
+                  <source src="/_assets/hero-desktop.mp4" type="video/mp4">
+               </video>
+
+               <div class="hero-badge">
+                  <img src="/_assets/reliable.png" alt="LG Reliable Badge">
+               </div>
+
+               <div class="hero-content-wrapper">
+                  <div class="hero-content">
+                     <p class="hero-eyebrow">LG WASHERS</p>
+                     <h1 class="hero-title">Discover your perfect wash</h1>
+                     <p class="hero-copy">
+                        Finding the right washer means finding the one that
+                        perfectly complements your home, lifestyle and budget.
+                        That’s why our washers are specially designed to save
+                        you time, cut down on energy costs and deliver an even
+                        deeper clean with every load. And as America’s most
+                        reliable line of home appliances, you can count on LG to
+                        make laundry day more effortless than ever before.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <div id="banner">
+         <div class="banner-wrapper banner-carousel">
+            <div class="banner-item">
+               <div class="banner-item-wrapper">
+                  <div class="banner-item-image">
+                     <img src="/_assets/truck.png" alt="#">
+                  </div>
+                  <div class="banner-item-copy">
+                     <p>Free Delivery</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="banner-item">
+               <div class="banner-item-wrapper">
+                  <div class="banner-item-image">
+                     <img src="/_assets/box.png" alt="#">
+                  </div>
+                  <div class="banner-item-copy">
+                     <p>14-Day Free Returns</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="banner-item">
+               <div class="banner-item-wrapper">
+                  <div class="banner-item-image">
+                     <img src="/_assets/check.png" alt="#">
+                  </div>
+                  <div class="banner-item-copy">
+                     <p>Extended Coverage</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="banner-item">
+               <div class="banner-item-wrapper">
+                  <div class="banner-item-image">
+                     <img src="/_assets/support.png" alt="#">
+                  </div>
+                  <div class="banner-item-copy">
+                     <p>Chat with an expert</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <div id="cards">
+         <div class="cards-header">
+            <div class="cards-header-wrapper">
+               <h2 class="cards-title">Laundry day, your way</h2>
+               <p class="cards-copy">
+                  Life’s messes come in all shapes and sizes, and so should your
+                  washer. From traditional and straightforward to modern and
+                  space-saving, explore our top models to find a solution that
+                  best fits your space and laundry habits.
+               </p>
+            </div>
+         </div>
+         <div class="cards-wrapper cards-carousel">
+            <div class="cards-item">
+               <div class="cards-item-wrapper">
+                  <div class="cards-item-content">
+                     <div class="cards-image">
+                        <img src="/_assets/laundry-cards-1.jpg" alt="#">
+                     </div>
+                     <div class="cards-copy">
+                        <h3 class="cards-item-title">Front Load</h3>
+                        <p class="cards-item-description">
+                           Designed for large loads and small spaces. Get more
+                           from your laundry room by stacking your front load on
+                           top of a compatible LG dryer to maximize floor space.
+                           Plus, save energy with less water usage, while still
+                           getting the impressive clean you expect.
+                           <a href="#"> Learn More </a>
+                        </p>
+                     </div>
+                     <div class="cta cta-cards">
+                        <a href="#" class="cta-button newbtn">Shop Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="cards-item">
+               <div class="cards-item-wrapper">
+                  <div class="cards-item-content">
+                     <div class="cards-image">
+                        <img src="/_assets/laundry-cards-2.jpg" alt="#">
+                     </div>
+                     <div class="cards-copy">
+                        <h3 class="cards-item-title">Top Load</h3>
+                        <p class="cards-item-description">
+                           Tough on stains but easy on upkeep. Choose our
+                           low-profile impeller option for an open inner tub and
+                           water current-powered cleaning or our traditional
+                           agitator option with a central post and multiple fins
+                           for 4-way wash action and a deeper clean.
+                           <a href="#"> Learn More </a>
+                        </p>
+                     </div>
+                     <div class="cta cta-cards">
+                        <a href="#" class="cta-button newbtn">Shop Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="cards-item">
+               <div class="cards-item-wrapper">
+                  <div class="cards-item-content">
+                     <div class="cards-image">
+                        <img src="/_assets/laundry-cards-3.jpg" alt="#">
+                     </div>
+                     <div class="cards-copy">
+                        <h3 class="cards-item-title">Washer Dryer Combos</h3>
+                        <p class="cards-item-description">
+                           Save on space without compromising on speed or power.
+                           Our all-in-one Washtower™ and WashCombo™ solutions
+                           will change the way you clean, bringing you the
+                           latest innovative smart features while keeping your
+                           laundry room clear and ready for action.
+                        </p>
+                     </div>
+                     <div class="cta cta-cards">
+                        <a href="#" class="cta-button newbtn">Shop Now</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <div id="table">
+         <div class="table-component-wrapper">
+            <div class="table-header">
+               <p class="table-eyebrow">EXPLORE KEY FEATURES</p>
+               <h2 class="table-title">Find the washer that works for you</h2>
+               <p class="table-description">
+                  We’re making it even easier to discover which LG washer is
+                  right for your home. Compare and contrast our top models side
+                  by side, from top loads with easy access and deep clean
+                  options to front load washers designed for efficiency, power
+                  and a sleek, modern look.
+               </p>
+            </div>
+
+            <div class="comparison-wrapper">
+               <!-- tabs -->
+               <div class="tabs-container">
+                  <div class="tab-btn active" data-tab="tab1">
+                     <div>
+                        <span>Front Load</span>
+                     </div>
+                  </div>
+                  <div class="tab-btn" data-tab="tab2">
+                     <div>
+                        <span>Top Load</span>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- tables -->
+               <div class="comparison-tables">
+                  <!-- table 1 -->
+                  <div class="comparison-table active" data-table="tab1">
+                     <!-- fixed column -->
+                     <div class="fixed-column">
+                        <div>
+                           <p>LG Front Load Washers</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Available Colors</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Capacity</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Cycles</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Allergiene™ Cycle</p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              Helps remove common allergens, including pollen
+                              and pet dander, from your fabrics with a powerful
+                              steam cycle.
+                           </div>
+                        </div>
+                        <div>
+                           <p>Built-in Intelligence</p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              Our built-in AI technology automatically selects
+                              optimal wash and dry motions and settings based on
+                              fabric type.
+                           </div>
+                        </div>
+                        <div>
+                           <p>ezDispense™</p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              Fill the detergent and fabric softener reservoirs
+                              once and you're set for multiple cycles.
+                           </div>
+                        </div>
+                        <div>
+                           <p>TurboWash<sup>®</sup></p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              More jets mean a shorter cycle time, no matter the
+                              size of the load.
+                           </div>
+                        </div>
+                        <!-- CTA space -->
+                        <div></div>
+                     </div>
+
+                     <!-- products -->
+                     <div class="products-carousel" id="carousel1">
+                        <!-- product 1 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WM3400.png" alt="washer 1">
+                              <span>WM3400</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info"></div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 2 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WM3470.png" alt="washer 2">
+                              <span>WM3470</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info"></div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 3 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WM4000.png" alt="washer 3">
+                              <span>WM4000</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-dark-silver"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>12 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbowash360.png" alt="turno wash 360">
+
+                              <span class="info-icon"><img src="/_assets/info-icon.png"></span>
+                              <div class="tooltip">
+                                 Five jets with variable sprays deliver a
+                                 complete clean more quickly than ever before.
+                              </div>
+                           </div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 4 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WM5500.png" alt="washer 4">
+                              <span>WM5500</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>25 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbowash360.png" alt="turno wash 360">
+                           </div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 5 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WM6500.png" alt="washer 5">
+                              <span>WM6500</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-dark-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>25 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbowash360.png" alt="turno wash 360">
+                           </div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 6 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WM6700.png" alt="washer 6">
+                              <span>WM6700</span>
+                           </div>
+                           <div>
+                              <div class="circle-dark-silver"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbowash360.png" alt="turno wash 360">
+                           </div>
+                           <div>
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Tabela 2  -->
+                  <div class="comparison-table" data-table="tab2">
+                     <!-- fixed column -->
+                     <div class="fixed-column">
+                        <div>
+                           <p>LG Top Load Washers</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Available Colors</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Impeller Capacity</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Cycles</p>
+                           <span></span>
+                        </div>
+                        <div>
+                           <p>Impeller</p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              A low-profile mechanism that creates currents of
+                              water to move clothes through the wash tub and
+                              cause them to rub against one another, removing
+                              stubborn spots and stains.
+                           </div>
+                        </div>
+                        <div>
+                           <p>Built-in Intelligence</p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              Our built-in AI technology automatically selects
+                              optimal wash and dry motions and settings based on
+                              fabric type.
+                           </div>
+                        </div>
+                        <div>
+                           <p>EasyUnload™</p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              An angled ergonomic front design puts the entire
+                              tub of your top load washer within easy reach.
+                           </div>
+                        </div>
+                        <div>
+                           <p>TurboWash<sup>®</sup></p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              More jets mean a shorter cycle time, no matter the
+                              size of the load.
+                           </div>
+                        </div>
+                        <div>
+                           <p>ezDispense™</p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              Fill the detergent and fabric softener reservoirs
+                              once and you're set for multiple cycles.
+                           </div>
+                        </div>
+
+                        <div>
+                           <p>Water Faucet</p>
+                        </div>
+
+                        <div class="cell-md">
+                           <p>Shop Impeller</p>
+                        </div>
+
+                        <div>
+                           <p>4-Way® Agitator Model</p>
+                           <span><img src="/_assets/info-icon.png"></span>
+                           <div class="tooltip">
+                              A central post and specially designed fins which
+                              create a unique 4-way wash action for a powerful
+                              yet gentle clean in even less time.
+                           </div>
+                        </div>
+
+                        <div>
+                           <p>Agitator Capacity</p>
+                        </div>
+
+                        <div>
+                           <p>Shop Agitator</p>
+                        </div>
+                     </div>
+
+                     <!-- products -->
+                     <div class="products-carousel" id="carousel2">
+                        <!-- product 1 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WT6100.png" alt="#">
+                              <span>WT6100</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbodrum.png" alt="">
+                              <span class="info-icon"><img src="/_assets/info-icon.png"></span>
+                              <div class="tooltip">
+                                 Simulating the agitator effect of traditional
+                                 top loads, the LG Direct Drive Motor rotates
+                                 independently from the tub mechanism to create
+                                 a powerful water flow.
+                              </div>
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT6105</div>
+                           <div>4.1 Cu.Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 2 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WT7000.png" alt="#">
+                              <span>WT7000</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                           </div>
+                           <div>4.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbodrum.png" alt="">
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT7005</div>
+                           <div>4.3 Cu.Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 3 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WT7150.png" alt="#">
+                              <span>WT7150</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbodrum.png" alt="">
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT7155</div>
+                           <div>4.8 Cu. Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 4 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WT8200.png" alt="#">
+                              <span>WT8200</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbowash.png" alt="">
+                              <span class="info-icon"><img src="/_assets/info-icon.png"></span>
+                              <div class="tooltip">
+                                 More jets mean a shorter cycle time, no matter
+                                 the size of the load.
+                              </div>
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT8205</div>
+                           <div>4.8 Cu. Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 5 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WT8400.png" alt="#">
+                              <span>WT8400</span>
+                           </div>
+                           <div>
+                              <div class="circle-white"></div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.5 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbowash3d.png" alt="">
+                              <span class="info-icon"><img src="/_assets/info-icon.png"></span>
+                              <div class="tooltip">
+                                 A powerful jet spray, plus a tub and motor that
+                                 rotate independently in opposite directions
+                                 lead to a thorough yet gentle clean in less
+                                 time.
+                              </div>
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div>WT8405</div>
+                           <div>5.3 Cu. Ft.</div>
+                           <div>
+                              <div class="cta white-variant">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- product 6 -->
+                        <div class="product-column">
+                           <div class="product-image">
+                              <img src="/_assets/WT8600.png" alt="#">
+                              <span>WT8600</span>
+                           </div>
+                           <div>
+                              <div class="circle-silver"></div>
+                           </div>
+                           <div>5.0 Cu.Ft.</div>
+                           <div>8 Cycles</div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div class="cell-info">
+                              <img src="/_assets/turbowash3d.png" alt="">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div>
+                              <img src="/_assets/check.png" alt="check sign">
+                           </div>
+                           <div class="cell-md">
+                              <div class="cta">
+                                 <a class="newbtn" href="#">Shop Now</a>
+                              </div>
+                           </div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Navegação do carousel -->
+               <div class="custom-navigation">
+                  <div id="custom-dots-tab1" class="custom-dots"></div>
+                  <div id="custom-arrows-tab1" class="custom-arrows"></div>
+
+                  <div id="custom-dots-tab2" class="custom-dots"></div>
+                  <div id="custom-arrows-tab2" class="custom-arrows"></div>
+               </div>
+            </div>
+         </div>
+         <div class="compare-tab">
+            <img src="/_assets/compare-models.png" alt="compare icon">
+         </div>
+      </div>
+   <div id="confidence">
+         <div class="confidence-wrapper">
+            <div class="confidence-header">
+               <p class="confidence-eyebrow">RELIABILITY</p>
+               <h2 class="confidence-title">Wash with confidence</h2>
+               <p class="confidence-description">
+                  Did you know it can cost between $300 and $500 to repair an
+                  appliance?1 It’s true—that’s why it helps to buy from brands
+                  you can count on. See why LG has always been the trusted
+                  choice for performance and dependability.
+               </p>
+            </div>
+         </div>
+
+         <div class="confidence-carousel-wrapper">
+            <div class="confidence-carousel">
+               <!-- card 1 -->
+               <div>
+                  <div class="confidence-card confidence-card-one">
+                     <div class="confidence-card-image">
+                        <picture>
+                           <source media="(min-width: 1024px)" srcset="/_assets/confidence-1-desktop.jpg">
+                           <img src="/_assets/confidence-1-mobile.jpg" alt="Description of image" class="confidence-card-image-desktop">
+                        </picture>
+
+                        <div class="confidence-card-content">
+                           <p class="confidence-card-eyebrow">
+                              CONSUMER REPORTS
+                           </p>
+                           <h3 class="confidence-card-title">
+                              Rated, reliable and recommended
+                           </h3>
+                           <p class="confidence-card-description">
+                              LG is consistently ranked #1 by Consumer Reports
+                              for our reliability, performance and customer
+                              satisfaction.*
+                              <span>
+                                 <a href="#"> See Top Load Report </a>
+                              </span>
+                           </p>
+
+                           <div class="cta green-variant">
+                              <a class="newbtn" href="#">See Front Load Report</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- card 2 -->
+               <div>
+                  <div class="confidence-card confidence-card-two">
+                     <div class="confidence-card-image">
+                        <picture>
+                           <source media="(min-width: 1024px)" srcset="/_assets/confidence-2-desktop.jpg">
+                           <img src="/_assets/confidence-2-mobile.jpg" alt="Description of image" class="confidence-card-image-desktop">
+                        </picture>
+                     </div>
+                     <div class="confidence-card-content">
+                        <p class="confidence-card-eyebrow">
+                           DUAL-INVERTER MOTORS
+                        </p>
+                        <h3 class="confidence-card-title">
+                           Power. Precision. Peace of mind.
+                        </h3>
+                        <p class="confidence-card-description">
+                           Select LG washers include a 10-year manufacturer's
+                           limited warranty on our inverter direct drive motor
+                           for positively unmatched efficiency and durability.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="confidence-disclaimer">
+            <p>
+               *WM5500HVA, DLGX5501V, and WT8405CB are recommended by Consumer
+               Reports. Consumer Reports does not endorse products or services.
+            </p>
+         </div>
+      </div>
+   <div id="pair">
+         <div class="pair-wrapper">
+            <div class="pair-header">
+               <p class="pair-eyebrow">PAIR UP &amp; SAVE</p>
+               <h2 class="pair-title">Perfect pairs, perfect prices</h2>
+               <p class="pair-description">
+                  Discover coordinated design, dozens of smart features and
+                  unparalleled convenience when you pair a compatible LG washer
+                  and dryer. Want to get even more value from your washer? Check
+                  out our exclusive, limited-time deals designed to elevate your
+                  laundry experience.
+               </p>
+            </div>
+
+            <div class="pair-main-container">
+               <div class="pair-carousel">
+                  <div class="pair-carousel-card">
+                     <picture>
+                        <source media="(min-width: 1024px)" srcset="/_assets/pair-1-desktop.jpg">
+                        <source media="(min-width: 760px)" srcset="/_assets/pair-1-tablet.jpg">
+                        <img src="/_assets/pair-1-mobile.jpg" alt="Pair 1">
+                     </picture>
+                  </div>
+                  <div class="pair-carousel-card">
+                     <picture>
+                        <source media="(min-width: 1024px)" srcset="/_assets/pair-2-desktop.jpg">
+                        <source media="(min-width: 760px)" srcset="/_assets/pair-2-tablet.jpg">
+                        <img src="/_assets/pair-2-mobile.jpg" alt="Pair 2">
+                     </picture>
+                  </div>
+                  <div class="pair-carousel-card">
+                     <picture>
+                        <source media="(min-width: 1024px)" srcset="/_assets/pair-3-desktop.jpg">
+                        <source media="(min-width: 760px)" srcset="/_assets/pair-3-tablet.jpg">
+                        <img src="/_assets/pair-3-mobile.jpg" alt="Pair 3">
+                     </picture>
+                  </div>
+                  <div class="pair-carousel-card">
+                     <picture>
+                        <source media="(min-width: 1024px)" srcset="/_assets/pair-4-desktop.jpg">
+                        <source media="(min-width: 760px)" srcset="/_assets/pair-4-tablet.jpg">
+                        <img src="/_assets/pair-4-mobile.jpg" alt="Pair 4">
+                     </picture>
+                  </div>
+                  <div class="pair-carousel-card">
+                     <picture>
+                        <source media="(min-width: 1024px)" srcset="/_assets/pair-5-desktop.jpg">
+                        <source media="(min-width: 760px)" srcset="/_assets/pair-5-tablet.jpg">
+                        <img src="/_assets/pair-5-mobile.jpg" alt="Pair 5">
+                     </picture>
+                  </div>
+               </div>
+
+               <div class="pair-content">
+                  <div class="pair-card">
+                     <div class="pair-card-image">
+                        <picture>
+                           <source media="(min-width: 1024px)" srcset="/_assets/pair-card-1-desktop.jpg">
+                           <source media="(min-width: 760px)" srcset="/_assets/pair-card-1-tablet.jpg">
+                           <img src="/_assets/pair-card-1-mobile.jpg" alt="Pair 1">
+                        </picture>
+                     </div>
+                     <div class="pair-card-content">
+                        <h3 class="pair-card-title">Spin into savings</h3>
+                        <p class="pair-card-description">
+                           Discovering the perfect pair isn’t just about your
+                           laundry appliances—it’s about matching with the
+                           perfect price, too. Shop our exclusive offers that
+                           bring both together.
+                        </p>
+                        <div class="cta cta-pair">
+                           <a href="#" class="cta-button newbtn">Shop Now</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <div id="thinq">
+         <div class="thinq-wrapper">
+            <div class="thinq-bg">
+               <picture>
+                  <source media="(min-width: 1024px)" srcset="/_assets/thinq-desktop.jpg">
+                  <source media="(min-width: 760px)" srcset="/_assets/thinq-tablet.jpg">
+                  <img src="/_assets/thinq-mobile.jpg" alt="Description of image" class="thinq-image">
+               </picture>
+
+               <div class="thinq-content-wrapper">
+                  <div class="thinq-content">
+                     <h3 class="thinq-title">Control your clean</h3>
+                     <p class="thinq-description">
+                        Save time and simplify. With the ThinQ<sup>®</sup> app,
+                        you can remotely start your LG washer while you're out,
+                        check cycle times and even receive automatic
+                        notifications when it’s time for maintenance or repairs.
+                     </p>
+
+                     <img src="/_assets/thinq-logo.png" alt="ThinQ logo" class="thinq-logo">
+
+                     <div class="cta thinq-cta">
+                        <a href="#" class="newbtn">Learn more</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <div id="review">
+         <div class="review-wrapper">
+            <div class="review-carousel">
+               <div class="review-carousel-item">
+                  <div class="review-card">
+                     <div class="review-quote">
+                        <img src="/_assets/quote.png" alt="Quote icon" class="review-quote-icon">
+                     </div>
+                     <p class="review-description">
+                        I've been using my new washing machine for about two
+                        weeks and I can honestly say I now love doing laundry.
+                        It is so easy to just fill up the dispenser and forget
+                        it for several loads...
+                     </p>
+                     <p class="review-name">SDMomma&nbsp;|&nbsp;11 Months Ago</p>
+                     <p class="review-stars">★★★★★</p>
+                     <p class="review-read">
+                        <a href="#"> Read Full Review </a>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="review-carousel-item">
+                  <div class="review-card">
+                     <div class="review-quote">
+                        <img src="/_assets/quote.png" alt="Quote icon" class="review-quote-icon">
+                     </div>
+                     <p class="review-description">
+                        I love the size. I can easily wash my comforters, but I
+                        don't have to stand on my head to reach in. I haven't
+                        figured out all of the cycles yet but love the ones I
+                        have used.
+                     </p>
+                     <p class="review-name">Mamaw Brenda&nbsp;|&nbsp;5 Months Ago</p>
+                     <p class="review-stars">★★★★★</p>
+                     <p class="review-read">
+                        <a href="#"> Read Full Review </a>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="review-carousel-item">
+                  <div class="review-card">
+                     <div class="review-quote">
+                        <img src="/_assets/quote.png" alt="Quote icon" class="review-quote-icon">
+                     </div>
+                     <p class="review-description">
+                        After a while having issues with my washer I decided I
+                        needed a new one and after much research I bought this
+                        LG washer. It is really something, washes amazing...
+                     </p>
+                     <p class="review-name">Johanna M&nbsp;|&nbsp;7 Months Ago</p>
+                     <p class="review-stars">★★★★★</p>
+                     <p class="review-read">
+                        <a href="#"> Read Full Review </a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <div id="footer">
+         <div class="footer-wrapper">
+            <div class="footer-image">
+               <img src="/_assets/lg-logo.png" alt="Description of image">
+            </div>
+
+            <div class="footer-disclaimer">
+               <div>
+                  <sup>¹</sup>
+                  <p>Based on LG’s out of warranty repair services in 2023.</p>
+               </div>
+               <div>
+                  <sup>²</sup>
+                  <p>
+                     Based on independent testing in normal cycle with
+                     TurboWash® option, 10 lb. load (June 2020).
+                  </p>
+               </div>
+               <div>
+                  <sup>³</sup>
+                  <p>
+                     Based on 9-13 lb. loads in normal mode, up to 14 loads when
+                     using detergent and softener; up to 25 loads when using
+                     both compartments to dispense detergent only. Always use HE
+                     (High-Efficiency) detergent with this washer. Use the
+                     ezDispense® Nozzle Clean function to periodically clean the
+                     reservoirs or before changing the softener reservoir to a
+                     detergent reservoir and vice versa.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   <!-- External libraries -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+   ></script>
+
+   <!-- Embedded JavaScript -->
+   <script>
+// Hero/index.js
+document.addEventListener("DOMContentLoaded", function () {
+   const video = document.querySelector(".hero-video-wrapper video");
+   const videoSource = document.querySelector(
+      ".hero-video-wrapper video source"
+   );
+
+   // Definir os caminhos para os diferentes vídeos
+   const videoSources = {
+      mobile: "./_assets/hero-mobile.mp4",
+      tablet: "./_assets/hero-tablet.mp4",
+      desktop: "./_assets/hero-desktop.mp4",
+   };
+
+   async function setVideoSource() {
+      let newSource;
+
+      if (window.matchMedia("(min-width: 1023px)").matches) {
+         newSource = videoSources.desktop;
+      } else if (window.matchMedia("(min-width: 500px)").matches) {
+         newSource = videoSources.tablet;
+      } else {
+         newSource = videoSources.mobile;
+      }
+
+      if (videoSource.src !== newSource) {
+         videoSource.src = newSource;
+
+         try {
+            await new Promise((resolve, reject) => {
+               video.addEventListener("loadeddata", resolve, { once: true });
+               video.addEventListener("error", reject, { once: true });
+               video.load();
+            });
+
+            await video.play();
+         } catch (error) {
+            console.error("Erro ao carregar ou reproduzir o vídeo:", error);
+         }
+      }
+   }
+
+   window.addEventListener("resize", setVideoSource);
+
+   setVideoSource();
+});
+
+
+// Banner/index.js
+$(document).ready(function () {
+   let isInitialized = false;
+
+   handleCarousel();
+
+   let resizeTimer;
+   $(window).on("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+         handleCarousel();
+      }, 250); // Slightly longer debounce for stability
+   });
+
+   function handleCarousel() {
+      const windowWidth = $(window).width();
+
+      // Desktop (900px and above): No carousel
+      if (windowWidth >= 900) {
+         if (isInitialized) {
+            $(".banner-carousel").slick("unslick");
+            isInitialized = false;
+            console.log("Desktop mode: Carousel disabled");
+         }
+      }
+      // Tablet (between 768px and 899px): 3 slides
+      else if (windowWidth >= 768 && windowWidth < 900) {
+         if (isInitialized) {
+            $(".banner-carousel").slick("unslick");
+         }
+         $(".banner-carousel").slick({
+            dots: true,
+            arrows: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            variableWidth: false,
+            adaptiveHeight: true,
+         });
+         isInitialized = true;
+         console.log("Tablet mode: 3 slides");
+      }
+      // Mobile (below 768px): 1.5 slides with variable width
+      else {
+         if (isInitialized) {
+            $(".banner-carousel").slick("unslick");
+         }
+         $(".banner-carousel").slick({
+            dots: true,
+            arrows: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 1.5,
+            slidesToScroll: 1,
+            adaptiveHeight: true,
+            variableWidth: true,
+         });
+         isInitialized = true;
+         console.log("Mobile mode: 1.5 slides with variable width");
+      }
+   }
+});
+
+
+// Cards/index.js
+$(document).ready(function () {
+   initSlick();
+
+   $(window).on("resize", function () {
+      clearTimeout(window.resizedFinished);
+      window.resizedFinished = setTimeout(function () {
+         $(".cards-carousel").slick("unslick");
+         initSlick();
+      }, 250);
+   });
+
+   function initSlick() {
+      $(".cards-carousel").slick({
+         dots: true,
+         arrows: true,
+         infinite: false,
+         speed: 300,
+         slidesToShow: 1.5,
+         slidesToScroll: 1,
+         adaptiveHeight: true,
+         mobileFirst: true,
+         variableWidth: false,
+         responsive: [
+            {
+               breakpoint: 480,
+               settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  variableWidth: false,
+               },
+            },
+            {
+               breakpoint: 760, // >= 768px (tablet)
+               settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  variableWidth: false,
+               },
+            },
+            {
+               breakpoint: 899, // >= 900px (desktop)
+               settings: "unslick",
+            },
+         ],
+      });
+   }
+});
+
+
+// Table/index.js
+$(document).ready(function () {
+   // Inicializar tudo
+   initAllCarousels();
+
+   // Função para inicializar todos os carousels
+   function initAllCarousels() {
+      initProductCarousels();
+      initTabEvents();
+      // Garantir que o estado inicial está correto
+      updateNavigationControls();
+      initTooltips();
+      compareTab();
+      // Inicializar tabs carousel se estiver em mobile
+      const windowWidth = $(window).width();
+      if (windowWidth <= 580) {
+         initTabsCarousel();
+      }
+   }
+
+   // Inicializar carousels de produtos
+   function initProductCarousels() {
+      // Esconder todos os controles de navegação inicialmente
+      $(".custom-dots, .custom-arrows").hide();
+
+      // Mostrar apenas os controles do tab ativo
+      const activeTabId = $(".tab-btn.active").data("tab");
+      $(`#custom-dots-${activeTabId}, #custom-arrows-${activeTabId}`).show();
+
+      $("#carousel1").slick({
+         dots: true,
+         arrows: true,
+         infinite: false,
+         speed: 300,
+         slidesToShow: 6,
+         slidesToScroll: 1,
+         appendDots: $("#custom-dots-tab1"),
+         appendArrows: $("#custom-arrows-tab1"),
+         responsive: [
+            {
+               breakpoint: 1200,
+               settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2,
+               },
+            },
+            {
+               breakpoint: 900,
+               settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2,
+               },
+            },
+            {
+               breakpoint: 650,
+               settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+               },
+            },
+         ],
+      });
+
+      $("#carousel2").slick({
+         dots: true,
+         arrows: true,
+         infinite: false,
+         speed: 300,
+         slidesToShow: 6,
+         slidesToScroll: 1,
+         appendDots: $("#custom-dots-tab2"),
+         appendArrows: $("#custom-arrows-tab2"),
+         responsive: [
+            {
+               breakpoint: 1200,
+               settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2,
+               },
+            },
+            {
+               breakpoint: 900,
+               settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 2,
+               },
+            },
+            {
+               breakpoint: 650,
+               settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+               },
+            },
+         ],
+      });
+   }
+
+   // Inicializar carousel de tabs
+   function initTabsCarousel() {
+      $(".tabs-container").slick({
+         arrows: true,
+         dots: false,
+         infinite: false,
+         speed: 300,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         centerMode: false,
+         variableWidth: false,
+      });
+
+      // Adicionar evento para quando o slide muda
+      $(".tabs-container").on(
+         "afterChange",
+         function (event, slick, currentSlide) {
+            // Encontrar o elemento tab-btn no slide atual
+            const currentSlideEl = $(
+               ".tabs-container .slick-slide[data-slick-index='" +
+                  currentSlide +
+                  "']"
+            );
+
+            if (currentSlideEl.length) {
+               const tabId = currentSlideEl.data("tab");
+
+               // Usar a função existente para mudar a tab, mas desativando
+               // o retorno para o slider para evitar loop infinito
+               changeTab(tabId, false);
+            }
+         }
+      );
+   }
+
+   function initTabEvents() {
+      // Quando uma tab é clicada diretamente
+      $(document).on("click", ".tab-btn", function (e) {
+         e.preventDefault();
+         const tabId = $(this).data("tab");
+         changeTab(tabId);
+      });
+   }
+
+   // Função para mudar de tab
+   function changeTab(tabId, updateSlider = true) {
+      // Atualizar botão ativo
+      $(".tab-btn").removeClass("active");
+      $('.tab-btn[data-tab="' + tabId + '"]').addClass("active");
+
+      // Mostrar tabela correspondente
+      $(".comparison-table").removeClass("active");
+      $('.comparison-table[data-table="' + tabId + '"]').addClass("active");
+
+      // Atualizar controles de navegação
+      updateNavigationControls();
+
+      // Atualizar carousel de produtos
+      $(".products-carousel").slick("setPosition");
+
+      // Se o carousel de tabs estiver ativo e updateSlider for true, mover para a tab correta
+      if (updateSlider && $(".tabs-container").hasClass("slick-initialized")) {
+         // Encontrar o índice do slide que contém a tab
+         let slideIndex = -1;
+         $(".tabs-container .slick-slide").each(function (index) {
+            if ($(this).find(`.tab-btn[data-tab="${tabId}"]`).length > 0) {
+               slideIndex = index;
+               return false; // Sair do loop
+            }
+         });
+
+         if (slideIndex >= 0) {
+            $(".tabs-container").slick("slickGoTo", slideIndex);
+         }
+      }
+   }
+
+   // Função para atualizar os controles de navegação
+   function updateNavigationControls() {
+      const activeTabId = $(".tab-btn.active").data("tab");
+
+      // Esconder todos os controles
+      $(".custom-dots, .custom-arrows").hide();
+
+      // Mostrar apenas os controles da tab ativa
+      $(`#custom-dots-${activeTabId}, #custom-arrows-${activeTabId}`).show();
+   }
+
+   function initTooltips() {
+      // Variável para rastrear se o dispositivo é touch
+      const isTouchDevice =
+         "ontouchstart" in window || navigator.maxTouchPoints > 0;
+
+      // Tooltip para elementos na coluna fixa
+      $(".fixed-column div span img").each(function () {
+         const $img = $(this);
+         const $tooltip = $img.parent().siblings(".tooltip");
+
+         if (isTouchDevice) {
+            // Em dispositivos touch, toggle no clique
+            $img.on("click", function (e) {
+               e.stopPropagation(); // Impede propagação do clique
+
+               // Fecha todos os outros tooltips abertos
+               $(".tooltip").not($tooltip).fadeOut(200);
+
+               // Toggle do tooltip atual
+               $tooltip.fadeToggle(200);
+            });
+         } else {
+            // Em desktop, comportamento de hover normal
+            $img.on("mouseenter", function () {
+               $tooltip.fadeIn(200);
+            });
+
+            $img.on("mouseleave", function () {
+               $tooltip.fadeOut(200);
+            });
+         }
+      });
+
+      // Tooltip para elementos nas colunas de produtos
+      $(".product-column div span img").each(function () {
+         const $img = $(this);
+         const $tooltip = $img.parent().siblings(".tooltip");
+
+         if (isTouchDevice) {
+            // Em dispositivos touch, toggle no clique
+            $img.on("click", function (e) {
+               e.stopPropagation(); // Impede propagação do clique
+
+               // Fecha todos os outros tooltips abertos
+               $(".tooltip").not($tooltip).fadeOut(200);
+
+               // Toggle do tooltip atual
+               $tooltip.fadeToggle(200);
+            });
+         } else {
+            // Em desktop, comportamento de hover normal
+            $img.on("mouseenter", function () {
+               $tooltip.fadeIn(200);
+            });
+
+            $img.on("mouseleave", function () {
+               $tooltip.fadeOut(200);
+            });
+         }
+      });
+
+      // Clicar em qualquer outro lugar na página fecha os tooltips
+      $(document).on("click touchstart", function () {
+         $(".tooltip").fadeOut(200);
+      });
+   }
+
+   function compareTab() {
+      let isComparisonVisible = true;
+
+      // Adicionar evento de clique na tab de comparação
+      $(".compare-tab img").on("click", function () {
+         // Toggle da visibilidade da comparison-wrapper
+         if (isComparisonVisible) {
+            $(".comparison-wrapper").slideUp(500);
+            $(".compare-tab img").attr("src", "/_assets/compare-models-down.png");
+         } else {
+            $(".comparison-wrapper").slideDown(500);
+            $(".compare-tab img").attr("src", "/_assets/compare-models.png");
+         }
+
+         // Inverter o estado
+         isComparisonVisible = !isComparisonVisible;
+      });
+   }
+
+   // Manipulador de redimensionamento
+   let resizeTimer;
+   $(window).on("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+         // Destruir carousels existentes
+         if ($(".tabs-container").hasClass("slick-initialized")) {
+            $(".tabs-container").slick("unslick");
+         }
+         $(".products-carousel").slick("unslick");
+
+         // Reinicializar tudo
+         initAllCarousels();
+      }, 250);
+   });
+});
+
+
+// Confidence/index.js
+$(document).ready(function () {
+   initSlick();
+
+   $(window).on("resize", function () {
+      clearTimeout(window.resizedFinished);
+      window.resizedFinished = setTimeout(function () {
+         $(".confidence-carousel").slick("unslick");
+         initSlick();
+      }, 100);
+   });
+
+   function initSlick() {
+      $(".confidence-carousel").slick({
+         dots: true,
+         arrows: true,
+         infinite: false,
+         speed: 300,
+         slidesToShow: 1.2,
+         slidesToScroll: 1,
+         mobileFirst: true,
+         adaptiveHeight: true,
+         variableWidth: false,
+         responsive: [
+            {
+               breakpoint: 760, // >= 768px (tablet)
+               settings: "unslick",
+            },
+         ],
+      });
+   }
+});
+
+
+// Pair/index.js
+$(document).ready(function () {
+   initSlick();
+
+   $(window).on("resize", function () {
+      clearTimeout(window.resizedFinished);
+      window.resizedFinished = setTimeout(function () {
+         $(".pair-carousel").slick("unslick");
+         initSlick();
+      }, 100);
+   });
+
+   function initSlick() {
+      $(".pair-carousel").slick({
+         dots: true,
+         arrows: true,
+         infinite: false,
+         autoplay: true,
+         speed: 300,
+         autoplaySpeed: 3000,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         adaptiveHeight: false,
+         variableWidth: false,
+         responsive: [
+            /*  {
+               breakpoint: 760, // >= 768px (tablet)
+               settings: "unslick",
+            }, */
+         ],
+      });
+   }
+});
+
+
+// Thinq/index.js
+
+
+// Review/index.js
+// Review Component JavaScript
+
+$(document).ready(function () {
+   initSlick();
+
+   $(window).on("resize", function () {
+      clearTimeout(window.resizedFinished);
+      window.resizedFinished = setTimeout(function () {
+         $(".review-carousel").slick("unslick");
+         initSlick();
+      }, 100);
+   });
+
+   function initSlick() {
+      $(".review-carousel").slick({
+         dots: true,
+         arrows: true,
+         infinite: false,
+         speed: 300,
+         slidesToShow: 1,
+         slidesToScroll: 1,
+         mobileFirst: true,
+         adaptiveHeight: false,
+         variableWidth: false,
+         responsive: [
+            {
+               breakpoint: 760, // >= 768px (tablet)
+               settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+               },
+            },
+            {
+               breakpoint: 1020,
+               settings: "unslick",
+            },
+         ],
+      });
+   }
+});
+
+
+// Footer/index.js
+
+   </script>
+</body>
+</html>
