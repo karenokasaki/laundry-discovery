@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
    // Definir os caminhos para os diferentes vídeos
    const videoSources = {
-      mobile: "./_assets/hero-mobile.mp4",
-      tablet: "./_assets/hero-tablet.mp4",
-      desktop: "./_assets/hero-desktop.mp4",
+      mobile: "./assets/hero-mobile.mp4",
+      tablet: "./assets/hero-tablet.mp4",
+      desktop: "./assets/hero-desktop.mp4",
    };
 
    async function setVideoSource() {

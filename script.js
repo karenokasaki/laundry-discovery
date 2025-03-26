@@ -34,10 +34,10 @@ async function combineComponents() {
       }
 
       // Create assets directory in dist if it doesn't exist
-      const assetsDir = path.join(distDir, "_assets");
+      const assetsDir = path.join(distDir, "assets");
       if (!fs.existsSync(assetsDir)) {
          mkdirp.sync(assetsDir);
-         console.log("Created _assets directory in dist folder");
+         console.log("Created assets directory in dist folder");
       }
 
       // Arrays to store component content and styles/scripts
@@ -69,7 +69,7 @@ async function combineComponents() {
                const sourcePath = path.join(componentAssetsDir, file);
                const destPath = path.join(assetsDir, file);
                fs.copyFileSync(sourcePath, destPath);
-               console.log(`Copied asset: ${file} to dist/_assets`);
+               console.log(`Copied asset: ${file} to dist/assets`);
             }
          }
 
@@ -95,11 +95,11 @@ async function combineComponents() {
             const componentDiv = $(`#${componentId}`);
 
             if (componentDiv.length > 0) {
-               // Adjust asset paths - change ./assets/ to /_assets/
+               // Adjust asset paths - change ./assets/ to /assets/
                componentDiv.find("[src]").each((i, elem) => {
                   const src = $(elem).attr("src");
                   if (src && src.startsWith("./assets/")) {
-                     const newSrc = src.replace("./assets/", "/_assets/");
+                     const newSrc = src.replace("./assets/", "./assets/");
                      $(elem).attr("src", newSrc);
                   }
                });
@@ -107,7 +107,7 @@ async function combineComponents() {
                componentDiv.find("[srcset]").each((i, elem) => {
                   const src = $(elem).attr("srcset");
                   if (src && src.startsWith("./assets/")) {
-                     const newSrc = src.replace("./assets/", "/_assets/");
+                     const newSrc = src.replace("./assets/", "./assets/");
                      $(elem).attr("srcset", newSrc);
                   }
                });
