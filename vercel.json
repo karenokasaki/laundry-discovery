@@ -1,7 +1,11 @@
 {
    "version": 2,
    "outputDirectory": "dist",
-   "devCommand": false,
-   "installCommand": false,
-   "public": true
+   "public": true,
+   "builds": [
+      {
+         "src": "dist/**",
+         "use": "@vercel/static"
+      }
+   ]
 }
