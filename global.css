@@ -3,9 +3,9 @@
    font-display: swap;
    font-weight: 400;
    font-style: normal;
-   src: local("☺"), url("/LG/fonts/LG EI_Text Regular.woff2") format("woff2"),
-      url("/LG/fonts/LG EI_Text Regular.woff") format("woff"),
-      url("/LG/fonts/LG EI_Text Regular.eot") format("eot");
+   src: local("☺"), url("/public/LG/fonts/LG EI_Text Regular.woff2") format("woff2"),
+      url("/public/LG/fonts/LG EI_Text Regular.woff") format("woff"),
+      url("/public/LG/fonts/LG EI_Text Regular.eot") format("eot");
 }
 @font-face {
    font-family: "LG EI";
@@ -13,27 +13,27 @@
    font-weight: 550;
    font-style: normal;
    src: local("☺"),
-      url("/LG/fonts/LG EI_Headline Semibold.woff2") format("woff2"),
-      url("/LG/fonts/LG EI_Headline Semibold.woff") format("woff"),
-      url("/LG/fonts/LG EI_Headline Semibold.eot") format("eot");
+      url("/public/LG/fonts/LG EI_Headline Semibold.woff2") format("woff2"),
+      url("/public/LG/fonts/LG EI_Headline Semibold.woff") format("woff"),
+      url("/public/LG/fonts/LG EI_Headline Semibold.eot") format("eot");
 }
 @font-face {
    font-family: "LG EI";
    font-display: swap;
    font-weight: 600;
    font-style: normal;
-   src: local("☺"), url("/LG/fonts/LG EI_Text SemiBold.woff2") format("woff2"),
-      url("/LG/fonts/LG EI_Text SemiBold.woff") format("woff"),
-      url("/LG/fonts/LG EI_Text SemiBold.eot") format("eot");
+   src: local("☺"), url("/public/LG/fonts/LG EI_Text SemiBold.woff2") format("woff2"),
+      url("/public/LG/fonts/LG EI_Text SemiBold.woff") format("woff"),
+      url("/public/LG/fonts/LG EI_Text SemiBold.eot") format("eot");
 }
 @font-face {
    font-family: "LG EI";
    font-display: swap;
    font-weight: 700;
    font-style: normal;
-   src: local("☺"), url("/LG/fonts/LG EI_Text Bold.woff2") format("woff2"),
-      url("/LG/fonts/LG EI_Text Bold.woff") format("woff"),
-      url("/LG/fonts/LG EI_Text Bold.eot") format("eot");
+   src: local("☺"), url("/public/LG/fonts/LG EI_Text Bold.woff2") format("woff2"),
+      url("/public/LG/fonts/LG EI_Text Bold.woff") format("woff"),
+      url("/public/LG/fonts/LG EI_Text Bold.eot") format("eot");
 }
 
 body {
