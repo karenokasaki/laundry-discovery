@@ -1,24 +1,8 @@
 {
-   "version": 2,
-   "outputDirectory": "dist",
-   "builds": [
-      {
-         "src": "/dist/index.html",
-         "use": "@vercel/static"
-      },
-      {
-         "src": "/dist/assets/(.*)",
-         "use": "@vercel/static"
-      }
-   ],
-   "routes": [
-      {
-         "src": "/",
-         "dest": "/dist/index.html"
-      },
-      {
-         "src": "/(.*)",
-         "dest": "/dist/$1"
-      }
-   ]
+  "version": 2,
+  "buildCommand": false,
+  "devCommand": false,
+  "installCommand": false,
+  "public": true,
+  "outputDirectory": "dist"
 }

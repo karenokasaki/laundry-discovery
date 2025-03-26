@@ -4,7 +4,7 @@
  * This script combines individual HTML/JS/CSS components into a single HTML file.
  * CSS and JS are embedded directly in the HTML file rather than linked externally.
  * It processes components based on a configuration file, extracts the relevant HTML elements,
- * adjusts asset paths, and generates a complete HTML document in a 'dist' folder.
+ * adjusts asset paths, and generates a complete HTML document.
  *
  * Usage: node combine-components-embedded.js
  */
@@ -33,18 +33,18 @@ async function combineComponents() {
          console.log("Created dist directory in project root");
       }
 
-      // Create public directory in dist if it doesn't exist
-      const publicDir = path.join(distDir, "public");
+      // Create public directory in root if it doesn't exist
+      const publicDir = path.join(rootDir, "public");
       if (!fs.existsSync(publicDir)) {
          mkdirp.sync(publicDir);
-         console.log("Created public directory in dist folder");
+         console.log("Created public directory in project root");
       }
 
       // Create assets directory in public if it doesn't exist
       const assetsDir = path.join(publicDir, "assets");
       if (!fs.existsSync(assetsDir)) {
          mkdirp.sync(assetsDir);
-         console.log("Created assets directory in dist/public folder");
+         console.log("Created assets directory in public folder");
       }
 
       // Arrays to store component content and styles/scripts
@@ -76,7 +76,7 @@ async function combineComponents() {
                const sourcePath = path.join(componentAssetsDir, file);
                const destPath = path.join(assetsDir, file);
                fs.copyFileSync(sourcePath, destPath);
-               console.log(`Copied asset: ${file} to dist/public/assets`);
+               console.log(`Copied asset: ${file} to public/assets`);
             }
          }
 
@@ -102,7 +102,7 @@ async function combineComponents() {
             const componentDiv = $(`#${componentId}`);
 
             if (componentDiv.length > 0) {
-               // Adjust asset paths - change ./assets/ to /public/assets/
+               // Adjust asset paths - change ./assets/ and /_assets/ to /assets/
                componentDiv.find("[src]").each((i, elem) => {
                   const src = $(elem).attr("src");
                   if (src && src.startsWith("./assets/")) {
@@ -200,24 +200,26 @@ ${combinedJs}
 
       // Save final HTML to index.html in dist directory
       fs.writeFileSync(path.join(distDir, "index.html"), finalHtml);
-      console.log(
-         "Successfully generated dist/index.html with embedded CSS and JS!"
+
+      // Também copie o arquivo index.html para a raiz do projeto para fácil acesso
+      fs.copyFileSync(
+         path.join(distDir, "index.html"),
+         path.join(rootDir, "index.html")
       );
 
-      // Create vercel.json if it doesn't exist
-      const vercelJsonPath = path.join(distDir, "vercel.json");
+      console.log(
+         "Successfully generated index.html with embedded CSS and JS!"
+      );
+
+      // Create vercel.json in root if it doesn't exist
+      const vercelJsonPath = path.join(rootDir, "vercel.json");
       const vercelConfig = {
          version: 2,
-         routes: [
-            {
-               src: "/public/(.*)",
-               dest: "/public/$1",
-            },
-            {
-               src: "/(.*)",
-               dest: "/$1",
-            },
-         ],
+         buildCommand: false,
+         devCommand: false,
+         installCommand: false,
+         public: true,
+         outputDirectory: "dist",
       };
 
       fs.writeFileSync(vercelJsonPath, JSON.stringify(vercelConfig, null, 2));
