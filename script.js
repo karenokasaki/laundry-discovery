@@ -33,11 +33,18 @@ async function combineComponents() {
          console.log("Created dist directory in project root");
       }
 
-      // Create assets directory in dist if it doesn't exist
-      const assetsDir = path.join(distDir, "assets");
+      // Create public directory in dist if it doesn't exist
+      const publicDir = path.join(distDir, "public");
+      if (!fs.existsSync(publicDir)) {
+         mkdirp.sync(publicDir);
+         console.log("Created public directory in dist folder");
+      }
+
+      // Create assets directory in public if it doesn't exist
+      const assetsDir = path.join(publicDir, "assets");
       if (!fs.existsSync(assetsDir)) {
          mkdirp.sync(assetsDir);
-         console.log("Created assets directory in dist folder");
+         console.log("Created assets directory in dist/public folder");
       }
 
       // Arrays to store component content and styles/scripts
@@ -61,7 +68,7 @@ async function combineComponents() {
          const cssPath = path.join(componentDir, "style.css");
          const jsPath = path.join(componentDir, "index.js");
 
-         // Copy component assets to dist assets directory
+         // Copy component assets to public/assets directory
          const componentAssetsDir = path.join(componentDir, "assets");
          if (fs.existsSync(componentAssetsDir)) {
             const files = fs.readdirSync(componentAssetsDir);
@@ -69,7 +76,7 @@ async function combineComponents() {
                const sourcePath = path.join(componentAssetsDir, file);
                const destPath = path.join(assetsDir, file);
                fs.copyFileSync(sourcePath, destPath);
-               console.log(`Copied asset: ${file} to dist/assets`);
+               console.log(`Copied asset: ${file} to dist/public/assets`);
             }
          }
 
@@ -95,11 +102,14 @@ async function combineComponents() {
             const componentDiv = $(`#${componentId}`);
 
             if (componentDiv.length > 0) {
-               // Adjust asset paths - change ./assets/ to /assets/
-               /* componentDiv.find("[src]").each((i, elem) => {
+               // Adjust asset paths - change ./assets/ to /public/assets/
+               componentDiv.find("[src]").each((i, elem) => {
                   const src = $(elem).attr("src");
                   if (src && src.startsWith("./assets/")) {
-                     const newSrc = src.replace("./assets/", "./assets/");
+                     const newSrc = src.replace("./assets/", "/public/assets/");
+                     $(elem).attr("src", newSrc);
+                  } else if (src && src.startsWith("/_assets/")) {
+                     const newSrc = src.replace("/_assets/", "/public/assets/");
                      $(elem).attr("src", newSrc);
                   }
                });
@@ -107,10 +117,25 @@ async function combineComponents() {
                componentDiv.find("[srcset]").each((i, elem) => {
                   const src = $(elem).attr("srcset");
                   if (src && src.startsWith("./assets/")) {
-                     const newSrc = src.replace("./assets/", "./assets/");
+                     const newSrc = src.replace("./assets/", "/public/assets/");
+                     $(elem).attr("srcset", newSrc);
+                  } else if (src && src.startsWith("/_assets/")) {
+                     const newSrc = src.replace("/_assets/", "/public/assets/");
                      $(elem).attr("srcset", newSrc);
                   }
-               }); */
+               });
+
+               // Handle video source tags
+               componentDiv.find("source[src]").each((i, elem) => {
+                  const src = $(elem).attr("src");
+                  if (src && src.startsWith("./assets/")) {
+                     const newSrc = src.replace("./assets/", "/public/assets/");
+                     $(elem).attr("src", newSrc);
+                  } else if (src && src.startsWith("/_assets/")) {
+                     const newSrc = src.replace("/_assets/", "/public/assets/");
+                     $(elem).attr("src", newSrc);
+                  }
+               });
 
                // Add processed HTML to array
                componentsHtml.push($.html(componentDiv));
@@ -178,6 +203,25 @@ ${combinedJs}
       console.log(
          "Successfully generated dist/index.html with embedded CSS and JS!"
       );
+
+      // Create vercel.json if it doesn't exist
+      const vercelJsonPath = path.join(distDir, "vercel.json");
+      const vercelConfig = {
+         version: 2,
+         routes: [
+            {
+               src: "/public/(.*)",
+               dest: "/public/$1",
+            },
+            {
+               src: "/(.*)",
+               dest: "/$1",
+            },
+         ],
+      };
+
+      fs.writeFileSync(vercelJsonPath, JSON.stringify(vercelConfig, null, 2));
+      console.log("Created vercel.json configuration file");
    } catch (error) {
       console.error("Error:", error);
    }
