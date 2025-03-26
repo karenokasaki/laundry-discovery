@@ -96,10 +96,10 @@ async function combineComponents() {
 
             if (componentDiv.length > 0) {
                // Adjust asset paths - change ./assets/ to /assets/
-               componentDiv.find("[src]").each((i, elem) => {
+               /* componentDiv.find("[src]").each((i, elem) => {
                   const src = $(elem).attr("src");
                   if (src && src.startsWith("./assets/")) {
-                     const newSrc = src.replace("./assets/", "./dist/assets/");
+                     const newSrc = src.replace("./assets/", "./assets/");
                      $(elem).attr("src", newSrc);
                   }
                });
@@ -107,10 +107,10 @@ async function combineComponents() {
                componentDiv.find("[srcset]").each((i, elem) => {
                   const src = $(elem).attr("srcset");
                   if (src && src.startsWith("./assets/")) {
-                     const newSrc = src.replace("./assets/", "./dist/assets/");
+                     const newSrc = src.replace("./assets/", "./assets/");
                      $(elem).attr("srcset", newSrc);
                   }
-               });
+               }); */
 
                // Add processed HTML to array
                componentsHtml.push($.html(componentDiv));
