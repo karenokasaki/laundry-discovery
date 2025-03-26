@@ -99,7 +99,7 @@ async function combineComponents() {
                componentDiv.find("[src]").each((i, elem) => {
                   const src = $(elem).attr("src");
                   if (src && src.startsWith("./assets/")) {
-                     const newSrc = src.replace("./assets/", "./assets/");
+                     const newSrc = src.replace("./assets/", "./dist/assets/");
                      $(elem).attr("src", newSrc);
                   }
                });
@@ -107,7 +107,7 @@ async function combineComponents() {
                componentDiv.find("[srcset]").each((i, elem) => {
                   const src = $(elem).attr("srcset");
                   if (src && src.startsWith("./assets/")) {
-                     const newSrc = src.replace("./assets/", "./assets/");
+                     const newSrc = src.replace("./assets/", "./dist/assets/");
                      $(elem).attr("srcset", newSrc);
                   }
                });
